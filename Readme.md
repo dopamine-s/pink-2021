@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Федор Клочков](https://up.htmlacademy.ru/adaptive/23/user/845199).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
