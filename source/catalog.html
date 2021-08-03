@@ -44,11 +44,17 @@
         Фотографии пользователей
       </h1>
       <section class="page-main__photo photo">
+        <h2 class="visually-hidden">
+          Список фотографий с комментариями авторов
+        </h2>
         <p class="photo__subject">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="photo__list">
           <article class="photo__item photo__item--active">
+            <span class="photo__photo-of-the-day">
+              панорама дня
+            </span>
             <img class="photo__image">
             <div class="photo__article">
               <cite class="photo__author">
@@ -189,6 +195,48 @@
             </div>
           </article>
         </div>
+      </section>
+      <section class="page-main__user-photo user-photo">
+        <h2 class="visually-hidden">
+          Раздел для предварительного редактирования и размещения пользовательских фотографий
+        </h2>
+        <p class="user-photo__subject">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <form class="user-photo__form" action="#" method="POST">
+          <img class="user-photo__image" src="img/user-photo-image.png" alt="изображение зимней дороги, окруженной деревьями и освещенной тусклым солнцем">
+          <p class="user-photo__switches edit-switches">
+            <button class="edit-switches__button edit-switches__button--crop" aria-pressed="true" type="button">
+              <span class="visually-hidden">
+                Кадрирование
+              </span>
+            </button>
+            <button class="edit-switches__button edit-switches__button--saturation" type="button">
+              <span class="visually-hidden">
+                Насыщенность
+              </span>
+            </button>
+            <button class="edit-switches__button edit-switches__button--contrast" type="button">
+              <span class="visually-hidden">
+                Контраст
+              </span>
+            </button>
+          </p>
+          <label for="size">
+            <span class="visually-hidden">
+              Размер
+            </span>
+          </label>
+          <input class="user-photo__range" type="range" min="1" max="10" id="size" value="8">
+          <p class="user-photo__edit-buttons edit-buttons">
+            <button class="edit-buttons__button edit-buttons__button--post" type="submit">
+              Запостить
+            </button>
+            <button class="edit-buttons__button edit-buttons__button--reset" type="reset">
+              Отмена
+            </button>
+          </p>
+        </form>
       </section>
     </main>
     <footer class="page__footer page-footer">
