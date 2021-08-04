@@ -51,18 +51,18 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="photo__list">
-          <article class="photo__item photo__item--active">
+          <article class="photo__item photo__item--hot">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Анны
             </h3>
             <img class="photo__image" src="img/photo-list/photo-of-the-day.png" width="320" height="137" alt="Вид с большой высоты">
-            <span class="photo__photo-of-the-day">
+            <span class="photo__label">
               панорама дня
             </span>
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Анна
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-31T02:45">
                 (5 минут назад)
               </time>
@@ -79,13 +79,13 @@
           </article>
           <article class="photo__item">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Левона
             </h3>
             <img class="photo__image" src="img/photo-list/photo-1.png" width="280" height="180" alt="Фотосессия белого легкового автомобиля, с направленными на него софитами">
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Левон
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-30T21:40">
                 (5 часов назад)
               </time>
@@ -102,13 +102,13 @@
           </article>
           <article class="photo__item">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Антона
             </h3>
             <img class="photo__image" src="img/photo-list/photo-2.png" width="280" height="180" alt="Фотография барабанной установки">
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Антон
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-30T14:30">
                 (12 часов назад)
               </time>
@@ -125,13 +125,13 @@
           </article>
           <article class="photo__item">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Бориса
             </h3>
             <img class="photo__image" src="img/photo-list/photo-3.png" width="280" height="180" alt="Вид неба через стеклянную крышу высотного здания">
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Борис
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-30T06:20">
                 (20 часов назад)
               </time>
@@ -148,13 +148,13 @@
           </article>
           <article class="photo__item">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Сергея
             </h3>
             <img class="photo__image" src="img/photo-list/photo-4.png" width="280" height="180" alt="Продуктовый рынок в поле под шатром с растяжкой «Кубанская бахча»">
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Сергей
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-30T01:36">
                 (25 часов назад)
               </time>
@@ -171,13 +171,13 @@
           </article>
           <article class="photo__item">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Максима
             </h3>
             <img class="photo__image" src="img/photo-list/photo-5.png" width="280" height="180" alt="Ноги наблюдателя и вид от первого лица с высокого холма вдаль">
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Максим
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-29T10:51">
                 (40 часов назад)
               </time>
@@ -194,13 +194,13 @@
           </article>
           <article class="photo__item">
             <h3 class="visually-hidden">
-              Фотография с временем съемки, счетчиком лайков и комментарием автора
+              Фото Надежды
             </h3>
             <img class="photo__image" src="img/photo-list/photo-6.png" width="280" height="180" alt="Вид на солнце над крылом самолета, летящего на большой высотеа">
             <div class="photo__article">
-              <cite class="photo__author">
+              <p class="photo__author">
                 Надежда
-              </cite>
+              </p>
               <time class="photo__time" datetime="2021-07-29T05:26">
                 (45 часов назад)
               </time>
@@ -219,7 +219,7 @@
       </section>
       <section class="page-main__user-photo user-photo">
         <h2 class="visually-hidden">
-          Раздел для предварительного редактирования и размещения пользовательских фотографий
+          Раздел редактирования и размещения фотографий
         </h2>
         <p class="user-photo__subject">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
@@ -243,12 +243,26 @@
               </span>
             </button>
           </p>
-          <label for="size">
-            <span class="visually-hidden">
-              Размер
-            </span>
-          </label>
-          <input class="user-photo__range" type="range" min="1" max="10" id="size" value="8">
+          <div class="user-photo__range-group">
+            <p class="user-photo__range-item user-photo__range-item--active">
+              <label class="visually-hidden" for="crop">
+                Размер
+              </label>
+              <input class="user-photo__range" type="range" min="1" max="100" id="crop" name="crop" value="80">
+            </p>
+            <p class="user-photo__range-item">
+              <label class="visually-hidden" for="saturation">
+                Насыщенность
+              </label>
+              <input class="user-photo__range" type="range" min="1" max="100" id="saturation" name="saturation" value="20">
+            </p>
+            <p class="user-photo__range-item">
+              <label class="visually-hidden" for="contrast">
+                Контраст
+              </label>
+              <input class="user-photo__range" type="range" min="1" max="100" id="contrast" name="contrast" value="50">
+            </p>
+          </div>
           <p class="user-photo__edit-buttons edit-buttons">
             <button class="edit-buttons__button edit-buttons__button--post" type="submit">
               Запостить
