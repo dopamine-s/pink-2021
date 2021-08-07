@@ -5,53 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/name-logo.svg" width="74" height="23" alt="Мобильное приложение «Pink»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__bg-wrapper">
+        <div class="page-header__nav-wrapper page-header__nav-wrapper--active">
+          <div class="page-header__inner-wrapper">
+          <a class="page-header__logo logo" href="index.html">
+            <img class="logo__image" src="img/name-logo.svg" width="74" height="23" alt="Мобильное приложение «Pink»">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          </div>
+          <nav class="page-header__main-nav main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/">
+                  Html academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="page-header__title">
+          Взгляните на жизнь иначе!
+        </h1>
+      </div>
     </header>
     <main class="page__main page-main">
-      <h1 class="page-main__title">
-        Взгляните на жизнь иначе!
-      </h1>
-      <section class="app">
+      <section class="page-main__app app">
         <div class="app__wrapper">
           <h2 class="visually-hidden">
             Ссылки для скачивания нашего приложения
           </h2>
-          <a href="https://www.apple.com/ru/app-store/" class="app__button button">Скачать приложение</a>
+          <a href="https://www.apple.com/ru/app-store/" class="app__button button">
+            Скачать приложение
+          </a>
           <ul class="app__platform-list platform-list">
             <li class="platform-list__item">
               <a class="platform-list__link platform-list__link--apple" href="#">
@@ -80,7 +89,7 @@
           </p>
         </div>
       </section>
-      <section class="app-functions">
+      <section class="page-main__app-functions app-functions">
         <div class="app-functions__wrapper">
           <h2 class="visually-hidden">
             Что предлагает наше приложение

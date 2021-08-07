@@ -1,0 +1,23 @@
+.page-header__bg-wrapper {
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.page-header__nav-wrapper--active {
+  position: relative;
+  z-index: 2;
+  background-color: $gray-dark;
+}
+
+.page-header__inner-wrapper--active {
+  position: relative;
+  z-index: 2;
+  background-color: $bg-transparent;
+}
+
+.page-header__title {
+  background-image: url("../img/hand-with-phone.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
