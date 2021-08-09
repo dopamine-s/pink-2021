@@ -1,0 +1,13 @@
+.app {
+  background-color: $bg-dark;
+}
+.app ul {
+  list-style: none;
+}
+
+.app__platform-description {
+  font-weight: 300;
+  line-height: 24px;
+  color: $text-white;
+}
+

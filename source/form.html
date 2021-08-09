@@ -10,41 +10,49 @@
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/name-logo.svg" width="74" height="23" alt="Мобильное приложение «Pink»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__bg-wrapper">
+        <div class="page-header__nav-wrapper page-header__nav-wrapper--active">
+          <div class="page-header__inner-wrapper">
+          <a class="page-header__logo logo" href="index.html">
+            <img class="logo__image" src="img/name-logo.svg" width="74" height="23" alt="Мобильное приложение «Pink»">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          </div>
+          <nav class="page-header__main-nav main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/">
+                  Html academy
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="page-header__title">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h1>
+      </div>
     </header>
     <main class="page__main page-main">
-      <h1 class="page-main__title">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
       <form class="page-main__form contest-form" method="POST" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
         <p class="contest-form__subject">

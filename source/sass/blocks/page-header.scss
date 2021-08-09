@@ -2,6 +2,7 @@
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-position: top left;
+  background-color: $bg-dark;
 }
 
 .page-header__nav-wrapper--active {
@@ -16,8 +17,17 @@
   background-color: $bg-transparent;
 }
 
-.page-header__title {
+.page-header__title-wrapper {
   background-image: url("../img/hand-with-phone.png");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: bottom left;
+  min-height: 286px;
+}
+
+.page-header__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: $text-white;
+
 }

@@ -1,3 +1,11 @@
 .main-nav ul {
   list-style: none;
 }
+
+.main-nav a {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: $text-white;
+  text-transform: uppercase;
+}
