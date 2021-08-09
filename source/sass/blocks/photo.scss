@@ -1,0 +1,39 @@
+.photo__label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  width: 140px;
+  height: 36px;
+  background-color: $pink;
+  color: $text-white;
+}
+
+.photo__article {
+  background-color: $bg-gray;
+}
+
+.photo__author {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  line-height: 24px;
+}
+
+.photo a {
+  font-size: 12px;
+  line-height: 24px;
+  color: $pink;
+  text-transform: uppercase;
+
+}

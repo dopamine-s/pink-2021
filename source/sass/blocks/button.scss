@@ -8,6 +8,15 @@
   height: 55px;
   border: 3px solid $bg-white;
   border-radius: 30px;
-  border-color: $text-white;
   color: $text-white;
+}
+
+.button--pink {
+  color: $pink;
+  border-color: $pink;
+}
+
+.button--transparent {
+  color: $gray-dark-transparent-1;
+  border-color: $gray-dark-transparent-1;
 }

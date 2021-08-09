@@ -1,0 +1,13 @@
+.form-button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 276px;
+  height: 59px;
+  border: 2px solid $bg-green;
+  border-radius: 1px;
+  background-color: $bg-green;
+  color: $text-white;
+}

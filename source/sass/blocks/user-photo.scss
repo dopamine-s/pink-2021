@@ -1,0 +1,11 @@
+.user-photo__form {
+  background-color: $bg-gray;
+}
+
+.user-photo__range-item {
+  display: none;
+}
+
+.user-photo__range-item--active {
+  display: block;
+}
