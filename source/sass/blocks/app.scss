@@ -1,6 +1,12 @@
 .app {
   background-color: $bg-dark;
 }
+
+.app__button {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
 .app ul {
   list-style: none;
 }
