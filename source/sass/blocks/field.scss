@@ -5,10 +5,10 @@
 
 .field__input {
   font-size: 18px;
-  border: 2px solid $gray-light;
+  border: 2px solid $gray-200;
   border-radius: 1px;
 }
 
 .field__input::placeholder {
-  color: $gray-dark;
+  color: $gray-500;
 }

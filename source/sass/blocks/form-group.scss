@@ -4,10 +4,10 @@
 
 .form-group__textarea {
   font-size: 18px;
-  border: 2px solid $gray-light;
+  border: 2px solid $gray-200;
   border-radius: 1px;
 }
 
 .form-group__textarea::placeholder {
-  color: $gray-dark;
+  color: $gray-500;
 }

@@ -4,9 +4,9 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  border: 3px solid $bg-white;
+  border: 3px solid $white;
   border-radius: 30px;
-  color: $text-white;
+  color: $white;
   padding: 18px 36px 18px 35px;
   text-align: center;
 }
@@ -17,6 +17,6 @@
 }
 
 .button--transparent {
-  color: $gray-dark-transparent-1;
-  border-color: $gray-dark-transparent-1;
+  color: $gray-500-transparent-1;
+  border-color: $gray-500-transparent-1;
 }

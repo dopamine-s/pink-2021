@@ -2,11 +2,11 @@
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-position: top left;
-  background-color: $bg-dark;
+  background-color: $gray-800;
 }
 
 .page-header__top-bar {
-  background-color: $gray-dark;
+  background-color: $gray-500;
 }
 
 .page-header__title-wrapper {
@@ -22,6 +22,6 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
-  color: $text-white;
+  color: $white;
   margin-bottom: 0;
 }

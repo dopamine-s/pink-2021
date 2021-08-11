@@ -1,25 +1,25 @@
 .rates {
-  background-color: $bg-gray;
+  background-color: $gray-300;
 }
 
 .rates__table {
-  background-color: $bg-white;
+  background-color: $white;
 }
 
 .rates__table th {
-  background-color: $gray-dark;
+  background-color: $gray-500;
 }
 
 .rates__name {
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
-  color: $text-white;
+  color: $white;
 }
 
 .rates__cost {
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase;
-  color: $text-white;
+  color: $white;
 }
