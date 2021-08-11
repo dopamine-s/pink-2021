@@ -4,40 +4,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
     <title>Пинк: Фотографии</title>
   </head>
   <body class="page__body">
     <header class="page__header page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/name-logo.svg" width="74" height="23" alt="Мобильное приложение «Pink»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+      <div class="page-header__top-bar">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__image" src="img/name-logo.svg" width="74" height="23" alt="Мобильное приложение «Pink»">
+        </a>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/">
-              Html academy
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">
+                Html academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__title">
+        Фотографии пользователей
+      </h1>
     </header>
     <main class="page__main page-main">
       <h1 class="page-main__title">
@@ -264,10 +275,10 @@
             </p>
           </div>
           <p class="user-photo__edit-buttons edit-buttons">
-            <button class="edit-buttons__button edit-buttons__button--post" type="submit">
+            <button class="edit-buttons__button button button--pink" type="submit">
               Запостить
             </button>
-            <button class="edit-buttons__button edit-buttons__button--reset" type="reset">
+            <button class="edit-buttons__button button button--transparent" type="reset">
               Отмена
             </button>
           </p>

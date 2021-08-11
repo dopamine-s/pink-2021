@@ -1,0 +1,12 @@
+.form-button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $green-500;
+  border-radius: 1px;
+  background-color: $green-500;
+  color: $white;
+  padding: 23px 45px;
+}

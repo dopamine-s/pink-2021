@@ -1,0 +1,18 @@
+.app {
+  background-color: $gray-800;
+}
+
+.app__button {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.app ul {
+  list-style: none;
+}
+
+.app__platform-description {
+  font-weight: 300;
+  line-height: 24px;
+  color: $white;
+}
