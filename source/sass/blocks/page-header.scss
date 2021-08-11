@@ -1,32 +1,27 @@
-.page-header__bg-wrapper {
+.page-header {
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-color: $bg-dark;
 }
 
-.page-header__nav-wrapper--active {
-  position: relative;
-  z-index: 2;
+.page-header__top-bar {
   background-color: $gray-dark;
-}
-
-.page-header__inner-wrapper--active {
-  position: relative;
-  z-index: 2;
-  background-color: $bg-transparent;
 }
 
 .page-header__title-wrapper {
   background-image: url("../img/hand-with-phone.png");
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: top left;
   min-height: 286px;
 }
 
 .page-header__title {
+  margin-top: 0;
+  padding-top: 300px;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
   color: $text-white;
+  margin-bottom: 0;
 }
