@@ -1,0 +1,14 @@
+.field {
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.field__input {
+  font-size: 18px;
+  border: 2px solid $gray-200;
+  border-radius: 1px;
+}
+
+.field__input::placeholder {
+  color: $gray-500;
+}

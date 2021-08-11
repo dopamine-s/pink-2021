@@ -1,0 +1,19 @@
+.app-functions__subject {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.app-functions__list {
+  background-color: $gray-300;
+  background-image: url("../img/phone-with-smile.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.app-functions__item-subject {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
