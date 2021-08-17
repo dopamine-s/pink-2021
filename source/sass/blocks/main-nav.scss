@@ -1,5 +1,17 @@
-.main-nav ul {
+.main-nav__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    @media (min-width: $desktop){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 .main-nav a {
