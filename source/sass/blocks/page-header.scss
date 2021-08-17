@@ -29,26 +29,25 @@
 }
 
 .page-header__wrapper {
-  background-color: $gray-500;
-
-  @media (min-width: $desktop) {
   background-color:  $black-transparent;
-  }
 }
 
 .page-header__top-bar {
   @include container;
+  background-color: $gray-500;
 
   @media (min-width: $desktop) {
+    position: static;
     display: grid;
     grid-template-columns: 147px auto;
+    background: none;
   }
 }
 
 .page-header__inner-wrapper {
   display: flex;
   justify-content: space-between;
-  min-height: 69px;
+  height: 66px;
 
   @media (min-width: $tablet) {
     min-height: 110px;
@@ -59,34 +58,31 @@
   }
 }
 
-.page-header__title-wrapper {
-  @include container;
-}
-
-.page-header__title-wrapper--main {
+.page-header__content-wrapper--main {
   background-repeat: no-repeat;
   background-image: url("../img/hand-with-phone.png");
-  background-size: cover;
-  background-position: 0% 100%;
+  background-size: contain;
+  background-position: 0% 5%;
+  min-height: 557px;
   margin-top: 110px;
-  min-height: 286px;
 
   @media (min-width: $tablet) {
     background-image: url("../img/hand-with-phone-tablet.png");
-    margin-top: 74px;
     min-height: 545px;
-    background-position: 50% 100%;
+    margin-top: 74px;
+    background-size: contain;
+    background-position: 0% 100%;
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/hand-with-phone-desktop.png");
-    margin-top: 98px;
     min-height: 645px;
+    margin-top: 98px;
     background-position: 0% 100%;
   }
 }
 
-.page-header__title-wrapper--form {
+.page-header__content-wrapper--form {
   min-height: 171px;
 
   @media (min-width: $tablet) {
@@ -98,7 +94,7 @@
   }
 }
 
-.page-header__title-wrapper--catalog {
+.page-header__content-wrapper--catalog {
   min-height: 171px;
 
   @media (min-width: $tablet) {
@@ -116,32 +112,36 @@
   color: $white;
   font-size: 24px;
   margin: auto;
-  margin-bottom: 0;
 }
 
 .page-header__title--main {
   width: 280px;
   line-height: 29px;
   margin-top: -81px;
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet) {
     width: 300px;
     font-size: 40px;
     line-height: 48px;
-    margin-top: 20px;
+    margin-top: 28px;
     margin-left: 0;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-bottom: 39px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 
   @media (min-width: $desktop) {
     width: 300px;
     font-size: 50px;
     line-height: 68px;
-    margin-top: 0;
+    margin-top: 16px;
     margin-left: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 51px;
   }
 }
 
