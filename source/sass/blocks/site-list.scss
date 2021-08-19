@@ -1,8 +1,9 @@
 .site-list__item {
-  min-height: 63px;
+  height: 63px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .site-list__item a {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding: 0;
 }

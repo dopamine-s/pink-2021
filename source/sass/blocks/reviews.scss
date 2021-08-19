@@ -4,3 +4,15 @@
   font-weight: 700;
   font-size: 18px;
 }
+
+.reviews__bg-triangle  {
+  height: 19px;
+
+  @media (min-width: $tablet) {
+    height: 41px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 100px;
+  }
+}

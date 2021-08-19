@@ -2,3 +2,18 @@
   min-height: 100%;
   margin: 0;
 }
+
+.page-main__article-bg-wrapper {
+
+  @media (min-width: $desktop) {
+    background-color: $gray-300;
+  }
+}
+
+.page-main__article {
+  margin-bottom: 109px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 72px;
+  }
+}

@@ -6,13 +6,16 @@
   background-position: top;
   background-size: cover;
   background-color: $gray-800;
+  margin-bottom: 46px;
 
   @media (min-width: $tablet) {
     background-image: url("../img/back-header-tablet.png");
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/back-header-desktop.png");
+    margin-bottom: 57px;
   }
 }
 
@@ -33,7 +36,6 @@
 }
 
 .page-header__top-bar {
-  @include container;
   background-color: $gray-500;
 
   @media (min-width: $desktop) {
@@ -41,6 +43,8 @@
     display: grid;
     grid-template-columns: 147px auto;
     background: none;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -48,6 +52,7 @@
   display: flex;
   justify-content: space-between;
   height: 66px;
+  width: 100%;
 
   @media (min-width: $tablet) {
     min-height: 110px;
@@ -61,24 +66,23 @@
 .page-header__content-wrapper--main {
   background-repeat: no-repeat;
   background-image: url("../img/hand-with-phone.png");
-  background-size: contain;
-  background-position: 0% 5%;
-  min-height: 557px;
-  margin-top: 110px;
+  background-size: object-fit;
+  background-position: 50% 28%;
+  padding-top: 120px;
 
   @media (min-width: $tablet) {
     background-image: url("../img/hand-with-phone-tablet.png");
-    min-height: 545px;
-    margin-top: 74px;
-    background-size: contain;
-    background-position: 0% 100%;
+    background-position: 50% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
+    min-height: 545px
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/hand-with-phone-desktop.png");
-    min-height: 645px;
-    margin-top: 98px;
-    background-position: 0% 100%;
+    width: 940px;
+    min-height: 645px
   }
 }
 
@@ -106,19 +110,22 @@
   }
 }
 
+.page-header__title-container {
+  @include container;
+}
+
 .page-header__title {
   text-align: center;
   font-weight: 300;
   color: $white;
   font-size: 24px;
-  margin: auto;
+  margin-top: -110px;
 }
 
 .page-header__title--main {
   width: 280px;
   line-height: 29px;
-  margin-top: -81px;
-  margin-bottom: 34px;
+  margin-bottom: 320px;
   margin-left: auto;
   margin-right: auto;
 
@@ -126,7 +133,6 @@
     width: 300px;
     font-size: 40px;
     line-height: 48px;
-    margin-top: 28px;
     margin-left: 0;
     margin-bottom: 39px;
     padding-left: 27px;
@@ -137,7 +143,6 @@
     width: 300px;
     font-size: 50px;
     line-height: 68px;
-    margin-top: 16px;
     margin-left: 0;
     padding-left: 25px;
     padding-right: 25px;
