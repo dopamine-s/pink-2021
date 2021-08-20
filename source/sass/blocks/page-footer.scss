@@ -24,3 +24,29 @@
     padding-right: 239px;
   }
 }
+
+.page-footer__low-bar {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 284px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    min-height: 127px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    min-height: 197px;
+  }
+}
+
+.page-footer__copyright img {
+  display: inline-block;
+}
+.page-footer__copyright p {
+  display: inline-block;
+}
