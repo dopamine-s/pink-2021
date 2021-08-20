@@ -154,6 +154,9 @@
               <cite class="reviews__author">
                 Николай Петров
               </cite>
+              <div class="reviews__author-about">
+                25 лет, водитель трамвая
+              </div>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
@@ -177,8 +180,6 @@
             </button>
           </p>
         </div>
-        <div class="reviews__bg-triangle bg-triangle">
-        </div>
       </section>
       <section class="page-main__rates rates">
         <div class="rates__wrapper slider">
@@ -190,6 +191,7 @@
               <caption class="visually-hidden">Таблица тарифных планов</caption>
               <thead>
                 <tr>
+                  <th class="rates__item"></th>
                   <th class="rates__item" scope="col">
                     <p class="rates__name">
                       <span class="visually-hidden">
@@ -236,7 +238,13 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="rates__advantage rates__advantage--active ">
+                  <td class="rates__advantage rates__advantage--description">
+                    <span class="visually-hidden">
+                      Вид преимущества
+                    </span>
+                    Розовый фильтр
+                  </td>
+                  <td class="rates__advantage rates__advantage--active">
                     <span class="visually-hidden">
                       Вид преимущества
                     </span>
@@ -265,6 +273,12 @@
                   </td>
                 </tr>
                 <tr>
+                  <td class="rates__advantage rates__advantage--description">
+                    <span class="visually-hidden">
+                      Вид преимущества
+                    </span>
+                    Смайлики
+                  </td>
                   <td class="rates__advantage rates__advantage--inactive">
                     <span class="visually-hidden">
                       Вид преимущества
@@ -294,6 +308,12 @@
                   </td>
                 </tr>
                 <tr>
+                  <td class="rates__advantage rates__advantage--description">
+                    <span class="visually-hidden">
+                      Вид преимущества
+                    </span>
+                    Комментарии
+                  </td>
                   <td class="rates__advantage rates__advantage--inactive">
                     <span class="visually-hidden">
                       Вид преимущества
@@ -354,24 +374,28 @@
           Остались вопросы? Свяжитесь с нами!
         </p>
         <div class="page-footer__contacts contacts">
-          <p class="contacts__text">
-            Звоните:
-            <a class="contacts__link" href="tel:+78125556666">
-              +7 (812) 555-66-66
-            </a>
-          </p>
-          <p class="contacts__text">
-            Пишите:
-            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-              mail@htmlacademy.ru
-            </a>
-          </p>
-          <p class="contacts__text">
-            Приезжайте в гости:
-            <a class="contacts__link" href="#">
-              Ул. Большая Конюшенная, 19/8
-            </a>
-          </p>
+          <div class="contacts__wrapper">
+            <p class="contacts__text">
+              <b>Звоните:</b>
+              <a class="contacts__link" href="tel:+78125556666">
+                +7 (812) 555-66-66
+              </a>
+            </p>
+            <p class="contacts__text">
+              <b>Пишите:</b>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </p>
+            <p class="contacts__text">
+              <b>Приезжайте в гости:</b>
+              <a class="contacts__link" href="#">
+                Ул. Большая Конюшенная, 19/8
+              </a>
+            </p>
+          </div>
+          <div class="contacts__map">
+          </div>
         </div>
         <div class="page-footer__logo-wrapper">
           <a class="page-footer__logo logo" href="index.html">

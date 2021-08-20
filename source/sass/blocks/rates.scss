@@ -1,13 +1,69 @@
 .rates {
   background-color: $gray-300;
+  min-height: 460px;
+
+  @media (min-width: $tablet) {
+    min-height: 344px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 534px;
+  }
+}
+
+.rates__item:first-of-type {
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+    background-color: $gray-300;
+    border: none;
+  }
+}
+
+.rates__list {
+  padding-top: 82px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+ }
+
+ @media (min-width: $desktop) {
+    padding-top: 157px;
+ }
 }
 
 .rates__table {
   background-color: $white;
+  flex-shrink: 0;
+  border-collapse: collapse;
+
+  @media (max-width: $mobile) {
+    width: 832px;
+  }
 }
 
-.rates__table th {
+.rates__item {
   background-color: $gray-500;
+  height: 94px;
+  width: 276px;
+  border-right: 2px solid $gray-200;
+
+  @media (min-width: $tablet) {
+    height: 75px;
+    width: 152px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 94px;
+    width: 233px;
+  }
 }
 
 .rates__name {
@@ -15,6 +71,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $white;
+  margin: 0;
 }
 
 .rates__cost {
@@ -22,4 +79,56 @@
   font-size: 18px;
   text-transform: uppercase;
   color: $white;
+  margin: 0;
+}
+
+.rates__advantage {
+  height: 59px;
+  border: 2px solid $gray-200;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    text-transform: none;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    text-transform: none;
+    padding-left: 22px;
+    padding-top: 12px;
+    height: 59px;
+    font-size: 18px;
+  }
+}
+
+.rates__table td:nth-of-type(n+2) {
+
+  @media (min-width: $tablet) {
+    visibility: hidden;
+  }
+}
+
+.rates__advantage--description {
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+    border: 1px solid $gray-200;
+    border-right: none;
+  }
+}
+
+.rates__toggles {
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
