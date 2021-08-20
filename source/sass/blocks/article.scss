@@ -4,6 +4,7 @@
   @media (max-width: $mobile) {
     display: none;
   }
+
   @media (min-width: $tablet) {
     min-height: 330px;
     background-image: url("../img/timer-tablet.svg");

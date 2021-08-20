@@ -32,7 +32,7 @@
 }
 
 .page-header__wrapper {
-  background-color:  $black-transparent;
+  background-color: $black-transparent;
 }
 
 .page-header__top-bar {
@@ -76,13 +76,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 620px;
-    min-height: 545px
+    min-height: 545px;
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/hand-with-phone-desktop.png");
     width: 940px;
-    min-height: 645px
+    min-height: 645px;
   }
 }
 

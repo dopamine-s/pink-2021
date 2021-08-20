@@ -12,7 +12,6 @@
 }
 
 .rates__item:first-of-type {
-
   @media (max-width: $mobile) {
     display: none;
   }
@@ -106,14 +105,12 @@
 }
 
 .rates__table td:nth-of-type(n+2) {
-
   @media (min-width: $tablet) {
     visibility: hidden;
   }
 }
 
 .rates__advantage--description {
-
   @media (max-width: $mobile) {
     display: none;
   }
