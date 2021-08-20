@@ -2,7 +2,7 @@
   @include container;
   min-height: 364px;
 
-   @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
     min-height: 280px;
   }
 
