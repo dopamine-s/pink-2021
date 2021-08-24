@@ -1,13 +1,62 @@
 .rates {
   background-color: $gray-300;
+  min-height: 460px;
+  padding-top: 82px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 344px;
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 534px;
+    padding-top: 157px;
+    padding-bottom: 98px;
+  }
+}
+
+.rates__item:first-of-type {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background-color: $gray-300;
+    border: none;
+  }
+}
+
+.rates__list {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
 }
 
 .rates__table {
   background-color: $white;
+  flex-shrink: 0;
+  border-collapse: collapse;
 }
 
-.rates__table th {
+.rates__item {
   background-color: $gray-500;
+  height: 94px;
+  width: 276px;
+  border-right: 2px solid $gray-200;
+
+  @media (min-width: $tablet-width) {
+    height: 75px;
+    width: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 94px;
+    width: 233px;
+  }
 }
 
 .rates__name {
@@ -15,6 +64,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $white;
+  margin: 0;
 }
 
 .rates__cost {
@@ -22,4 +72,55 @@
   font-size: 18px;
   text-transform: uppercase;
   color: $white;
+  margin: 0;
+}
+
+.rates__advantage {
+  height: 59px;
+  border: 2px solid $gray-200;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-transform: none;
+    padding-left: 22px;
+    padding-top: 12px;
+    height: 59px;
+    font-size: 18px;
+  }
+}
+
+.rates__table td:nth-of-type(n+2) {
+  @media (min-width: $tablet-width) {
+    visibility: hidden;
+  }
+}
+
+.rates__advantage--description {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: 1px solid $gray-200;
+    border-right: none;
+  }
+}
+
+.rates__toggles {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

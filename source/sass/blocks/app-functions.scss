@@ -1,14 +1,92 @@
 .app-functions__subject {
+  @include container;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.app-functions__subject:first-of-type {
+  margin-bottom: 30px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
+  }
+}
+
+.app-functions__subject:last-of-type {
+  margin-bottom: 55px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+    padding: 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    padding: 0 110px;
+  }
+}
+
+.app-functions__wrapper {
+  background-color: $gray-300;
+}
+
+.app-functions__list-wrapper {
+  @include container;
+  background-image: url("../img/phone-with-smile.png");
+  background-repeat: no-repeat;
+  background-position: 50% calc(100% + 40px);
+  padding-top: 56px;
+  padding-bottom: 318px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/phone-with-smile-tablet.png");
+    background-size: 49%;
+    background-position: 0 0;
+    padding-left: 310px;
+    padding-top: 75px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 350px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 76px;
+    background-image: url("../img/phone-with-smile-desktop.png");
+    background-size: 100%;
+    background-position: 50% 0;
+  }
 }
 
 .app-functions__list {
-  background-color: $gray-300;
-  background-image: url("../img/phone-with-smile.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 68px;
+    background-color: $gray-300;
+    padding-top: 50px;
+    margin-top: -50px;
+    width: 892px;
+  }
 }
 
 .app-functions__item-subject {
@@ -16,4 +94,43 @@
   font-size: 18px;
   line-height: 24px;
   color: $black;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 14px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 32px;
+    grid-row: 1 / 2;
+  }
+}
+
+.app-functions__item-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray-500;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+    margin-bottom: 0;
+    grid-row: 2 / 2;
+  }
+}
+
+.app-functions__item-description:last-of-type {
+  margin-bottom: 0;
 }

@@ -1,18 +1,75 @@
 .app {
   background-color: $gray-800;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.app__wrapper {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-left: 0;
+  }
 }
 
 .app__button {
   margin-top: 28px;
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 46px;
+    padding-left: 45px;
+    padding-right: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .app ul {
   list-style: none;
 }
 
+.app__platform-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  margin-left: 47px;
+  margin-right: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
 .app__platform-description {
   font-weight: 300;
   line-height: 24px;
   color: $white;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 130px;
+  }
 }

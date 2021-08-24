@@ -1,11 +1,16 @@
-.main-nav ul {
+.main-nav__list {
   list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  background-color: $gray-500;
+  width: 100%;
 
-.main-nav a {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700;
-  color: $white;
-  text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: none;
+    width: auto;
+  }
 }
