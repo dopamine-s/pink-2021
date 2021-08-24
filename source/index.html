@@ -102,47 +102,45 @@
         <p class="app-functions__subject">Устали от серости мегаполиса?</p>
         <p class="app-functions__subject">Нам есть, что вам предложить!</p>
         <div class="app-functions__wrapper">
-          <div class="app-functions__list-bg-wrapper">
-            <dl class="app-functions__list">
-              <dt class="app-functions__item-subject">
+          <div class="app-functions__list-wrapper">
+            <div class="app-functions__list">
+              <div class="app-functions__item-subject">
                 Поднимает настроение
-              </dt>
-              <dd class="app-functions__item-description">
+              </div>
+              <div class="app-functions__item-description">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </dd>
-              <dt class="app-functions__item-subject">
+              </div>
+              <div class="app-functions__item-subject">
                 Меняет мир вокруг
-              </dt>
-              <dd class="app-functions__item-description">
+              </div>
+              <div class="app-functions__item-description">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </dd>
-              <dt class="app-functions__item-subject">
+              </div>
+              <div class="app-functions__item-subject">
                 Заводит новых друзей
-              </dt>
-              <dd class="app-functions__item-description">
+              </div>
+              <div class="app-functions__item-description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </dd>
-            </dl>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <div class="page-main__article-bg-wrapper">
-        <article class="page-main__article article">
+      <div class="page-main__article-wrapper">
+        <div class="page-main__article article">
           <h2 class="visually-hidden">
             Исследование ученых об использовании приложения
           </h2>
-          <div class="article__wrapper">
-            <p class="article__subject">
-              Эффект<br> на 24 часа!
-            </p>
-            <p class="article__text">
-              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-            </p>
-            <a class="article__link" href="#">
-              Узнать больше об исследовании
-            </a>
-          </div>
-        </article>
+          <p class="article__subject">
+            Эффект<br> на 24 часа!
+          </p>
+          <p class="article__text">
+            Британские ученые провели исследования и доказали, что положительный эффект<br>от использования приложения длится целые сутки!
+          </p>
+          <a class="article__link" href="#">
+            Узнать больше об исследовании
+          </a>
+        </div>
       </div>
       <section class="page-main__reviews reviews">
         <div class="reviews__wrapper slider">
@@ -154,9 +152,9 @@
               <cite class="reviews__author">
                 Николай Петров
               </cite>
-              <div class="reviews__author-about">
+              <p class="reviews__author-about">
                 25 лет, водитель трамвая
-              </div>
+              </p>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
@@ -181,261 +179,257 @@
           </p>
         </div>
       </section>
-      <section class="page-main__rates rates">
-        <div class="rates__wrapper slider">
-          <h2 class="visually-hidden">
-            Цены и тарифы
-          </h2>
-          <div class="rates__list">
-            <table class="rates__table">
-              <caption class="visually-hidden">Таблица тарифных планов</caption>
-              <thead>
-                <tr>
-                  <th class="rates__item"></th>
-                  <th class="rates__item" scope="col">
-                    <p class="rates__name">
-                      <span class="visually-hidden">
-                        Название тарифного плана
-                      </span>
-                      База
-                    </p>
-                    <p class="rates__cost">
-                      <span class="visually-hidden">
-                        Стоимость тарифного плана
-                      </span>
-                      1,99 usd
-                    </p>
-                  </th>
-                  <th class="rates__item rates__item--current" scope="col">
-                    <p class="rates__name">
-                      <span class="visually-hidden">
-                        Название тарифного плана
-                      </span>
-                      Стандарт
-                    </p>
-                    <p class="rates__cost">
-                      <span class="visually-hidden">
-                        Стоимость тарифного плана
-                      </span>
-                      3,99 usd
-                    </p>
-                  </th>
-                  <th class="rates__item" scope="col">
-                    <p class="rates__name">
-                      <span class="visually-hidden">
-                        Название тарифного плана
-                      </span>
-                      Анлим
-                    </p>
-                    <p class="rates__cost">
-                      <span class="visually-hidden">
-                        Стоимость тарифного плана
-                      </span>
-                      9,99 usd
-                    </p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="rates__advantage rates__advantage--description">
+      <section class="page-main__rates rates slider">
+        <h2 class="visually-hidden">
+          Цены и тарифы
+        </h2>
+        <div class="rates__list">
+          <table class="rates__table">
+            <caption class="visually-hidden">Таблица тарифных планов</caption>
+            <thead>
+              <tr>
+                <th class="rates__item"></th>
+                <th class="rates__item" scope="col">
+                  <p class="rates__name">
                     <span class="visually-hidden">
-                      Вид преимущества
+                      Название тарифного плана
                     </span>
-                    Розовый фильтр
-                  </td>
-                  <td class="rates__advantage rates__advantage--active">
+                    База
+                  </p>
+                  <p class="rates__cost">
                     <span class="visually-hidden">
-                      Вид преимущества
+                      Стоимость тарифного плана
                     </span>
-                    Розовый фильтр
+                    1,99 usd
+                  </p>
+                </th>
+                <th class="rates__item rates__item--current" scope="col">
+                  <p class="rates__name">
                     <span class="visually-hidden">
-                      включено в тариф
+                      Название тарифного плана
                     </span>
-                  </td>
-                  <td class="rates__advantage rates__advantage--active">
+                    Стандарт
+                  </p>
+                  <p class="rates__cost">
                     <span class="visually-hidden">
-                      Вид преимущества
+                      Стоимость тарифного плана
                     </span>
-                    Розовый фильтр
+                    3,99 usd
+                  </p>
+                </th>
+                <th class="rates__item" scope="col">
+                  <p class="rates__name">
                     <span class="visually-hidden">
-                      включено в тариф
+                      Название тарифного плана
                     </span>
-                  </td>
-                  <td class="rates__advantage rates__advantage--active">
+                    Анлим
+                  </p>
+                  <p class="rates__cost">
                     <span class="visually-hidden">
-                      Вид преимущества
+                      Стоимость тарифного плана
                     </span>
-                    Розовый фильтр
-                    <span class="visually-hidden">
-                      включено в тариф
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="rates__advantage rates__advantage--description">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Смайлики
-                  </td>
-                  <td class="rates__advantage rates__advantage--inactive">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Смайлики
-                    <span class="visually-hidden">
-                      не включено в тариф
-                    </span>
-                  </td>
-                  <td class="rates__advantage rates__advantage--active">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Смайлики
-                    <span class="visually-hidden">
-                      включено в тариф
-                    </span>
-                  </td>
-                  <td class="rates__advantage rates__advantage--active">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Смайлики
-                    <span class="visually-hidden">
-                      включено в тариф
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="rates__advantage rates__advantage--description">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Комментарии
-                  </td>
-                  <td class="rates__advantage rates__advantage--inactive">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Комментарии
-                    <span class="visually-hidden">
-                      не включено в тариф
-                    </span>
-                  </td>
-                  <td class="rates__advantage rates__advantage--inactive">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Комментарии
-                    <span class="visually-hidden">
-                      не включено в тариф
-                    </span>
-                  </td>
-                  <td class="rates__advantage rates__advantage--active">
-                    <span class="visually-hidden">
-                      Вид преимущества
-                    </span>
-                    Комментарии
-                    <span class="visually-hidden">
-                      включено в тариф
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="rates__toggles slider__toggles">
-            <button class="slider__toggle " type="button">
-              <span class="visually-hidden">
-                Тариф 1
-              </span>
-            </button>
-            <button class="slider__toggle slider__toggle--current" type="button">
-              <span class="visually-hidden">
-                Тариф 2
-              </span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">
-                Тариф 3
-              </span>
-            </button>
+                    9,99 usd
+                  </p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="rates__advantage rates__advantage--description">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Розовый фильтр
+                </td>
+                <td class="rates__advantage rates__advantage--active">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Розовый фильтр
+                  <span class="visually-hidden">
+                    включено в тариф
+                  </span>
+                </td>
+                <td class="rates__advantage rates__advantage--active">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Розовый фильтр
+                  <span class="visually-hidden">
+                    включено в тариф
+                  </span>
+                </td>
+                <td class="rates__advantage rates__advantage--active">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Розовый фильтр
+                  <span class="visually-hidden">
+                    включено в тариф
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__advantage rates__advantage--description">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Смайлики
+                </td>
+                <td class="rates__advantage rates__advantage--inactive">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Смайлики
+                  <span class="visually-hidden">
+                    не включено в тариф
+                  </span>
+                </td>
+                <td class="rates__advantage rates__advantage--active">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Смайлики
+                  <span class="visually-hidden">
+                    включено в тариф
+                  </span>
+                </td>
+                <td class="rates__advantage rates__advantage--active">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Смайлики
+                  <span class="visually-hidden">
+                    включено в тариф
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__advantage rates__advantage--description">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Комментарии
+                </td>
+                <td class="rates__advantage rates__advantage--inactive">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Комментарии
+                  <span class="visually-hidden">
+                    не включено в тариф
+                  </span>
+                </td>
+                <td class="rates__advantage rates__advantage--inactive">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Комментарии
+                  <span class="visually-hidden">
+                    не включено в тариф
+                  </span>
+                </td>
+                <td class="rates__advantage rates__advantage--active">
+                  <span class="visually-hidden">
+                    Вид преимущества
+                  </span>
+                  Комментарии
+                  <span class="visually-hidden">
+                    включено в тариф
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="rates__toggles slider__toggles">
+          <button class="slider__toggle " type="button">
+            <span class="visually-hidden">
+              Тариф 1
+            </span>
+          </button>
+          <button class="slider__toggle slider__toggle--current" type="button">
+            <span class="visually-hidden">
+              Тариф 2
+            </span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">
+              Тариф 3
+            </span>
+          </button>
+        </p>
+      </section>
+      <section class="page-main__contacts contacts">
+        <h2 class="visually-hidden">
+          Наши контакты
+        </h2>
+        <p class="contacts__subject">
+          Остались вопросы? Свяжитесь с нами!
+        </p>
+        <div class="contacts__wrapper">
+          <p class="contacts__text">
+            <b>Звоните:</b>
+            <a class="contacts__link" href="tel:+78125556666">
+              +7 (812) 555-66-66
+            </a>
           </p>
+          <p class="contacts__text">
+            <b>Пишите:</b>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+              mail@htmlacademy.ru
+            </a>
+          </p>
+          <p class="contacts__text">
+            <b>Приезжайте в гости:</b>
+            <a class="contacts__link" href="#">
+              Ул. Большая Конюшенная, 19/8
+            </a>
+          </p>
+        </div>
+        <div class="contacts__map">
         </div>
       </section>
     </main>
     <footer class="page__footer page-footer">
       <div class="page-footer__wrapper">
-        <h2 class="visually-hidden">
-          Наши контакты
-        </h2>
-        <p class="page-footer__subject">
-          Остались вопросы? Свяжитесь с нами!
-        </p>
-        <div class="page-footer__contacts contacts">
-          <div class="contacts__wrapper">
-            <p class="contacts__text">
-              <b>Звоните:</b>
-              <a class="contacts__link" href="tel:+78125556666">
-                +7 (812) 555-66-66
-              </a>
-            </p>
-            <p class="contacts__text">
-              <b>Пишите:</b>
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </p>
-            <p class="contacts__text">
-              <b>Приезжайте в гости:</b>
-              <a class="contacts__link" href="#">
-                Ул. Большая Конюшенная, 19/8
-              </a>
-            </p>
-          </div>
-          <div class="contacts__map">
-          </div>
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo logo" href="index.html">
+            <img class="logo__image" src="img/picture-logo.svg" width="145" height="40" alt="Изображение логотипа мобильного приложения «Pink»">
+          </a>
         </div>
-        <div class="page-footer__low-bar">
-          <div class="page-footer__logo-wrapper">
-            <a class="page-footer__logo logo" href="index.html">
-              <img class="logo__image" src="img/picture-logo.svg" width="145" height="40" alt="Изображение логотипа мобильного приложения «Pink»">
-            </a>
-          </div>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">
-                  <span class="visually-hidden">
-                    Twitter
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">
-                  <span class="visually-hidden">
-                    Facebook
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">
-                  <span class="visually-hidden">
-                    Youtube
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">
-              Разработано
-            </p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="academy-social-logo" src="img/html-academy-social-logo.svg" width="27" height="34" alt="логотип «html academy»">
-            </a>
-          </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">
+                  Youtube
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">
+            Разработано
+          </p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="academy-social-logo" src="img/html-academy-social-logo.svg" width="27" height="34" alt="логотип «html academy»">
+          </a>
         </div>
       </div>
     </footer>
