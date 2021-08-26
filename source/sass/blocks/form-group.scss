@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: initial;
     margin-left: 0;
     margin-right: 0;
     grid-column: 1 / span 2;
