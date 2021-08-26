@@ -79,12 +79,11 @@
 .app-functions__list {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 252px);
     grid-column-gap: 68px;
     background-color: $gray-300;
     padding-top: 50px;
     margin-top: -50px;
-    width: 892px;
   }
 }
 
@@ -110,8 +109,8 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 32px;
-    grid-row: 1 / 2;
     text-align: center;
+    order: 0;
   }
 }
 
@@ -137,8 +136,8 @@
     padding-left: 7px;
     padding-right: 7px;
     margin-bottom: 0;
-    grid-row: 2 / 2;
     text-align: center;
+    order: 1;
   }
 }
 

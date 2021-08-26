@@ -68,3 +68,9 @@
     margin-left: 370px;
   }
 }
+
+.article__spacer {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-right: 10px;
+  }
+}

@@ -1,11 +1,29 @@
 .form-checkbox {
+  padding: 0;
+  margin: 0;
   background-color: $gray-300;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4;
+  }
 }
 
-.form-checkbox ul {
-  list-style: none;
+.form-checkbox__wrapper {
+  @include container;
 }
 
 .form-checkbox label {
   font-size: 18px;
+}
+
+.form-checkbox__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

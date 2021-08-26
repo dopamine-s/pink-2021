@@ -1,11 +1,38 @@
 .form-radio {
+  margin: 0;
+  padding: 0;
   background-color: $gray-300;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
-.form-radio ul {
+.form-radio__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form-radio label {
   font-size: 18px;
+}
+
+.form-radio__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }

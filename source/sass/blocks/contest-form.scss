@@ -1,3 +1,53 @@
+.contest-form__subject {
+  @include container;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 70px;
+  }
+}
+
+.contest-form__subject span {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.contest-form__wrapper {
+  display: grid;
+  margin-bottom: 52px;
+  grid-row-gap: 42px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin-bottom: 70px;
+    grid-row-gap: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 74px;
+    grid-row-gap: 69px;
+    width: 940px;
+    margin-top: 0;
+    margin-bottom: 69px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .contest-form__legend {
   line-height: 18px;
   color: $pink;
@@ -5,7 +55,18 @@
 }
 
 .contest-form__group {
-  border: none;
+  @media (max-width: $mobile-width) {
+    border: none;
+  }
+}
+
+.contest-form__button-wrapper {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contest-form__mark {
