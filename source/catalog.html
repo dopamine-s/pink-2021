@@ -57,9 +57,6 @@
       </div>
     </header>
     <main class="page__main page-main">
-      <h1 class="page-main__title">
-        Фотографии пользователей
-      </h1>
       <section class="page-main__photo photo">
         <h2 class="visually-hidden">
           Список фотографий с комментариями авторов
@@ -68,15 +65,15 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="photo__list">
-          <article class="photo__item photo__item--hot">
+          <article class="photo__item--hot">
             <h3 class="visually-hidden">
               Фото Анны
             </h3>
-            <img class="photo__image" src="img/photo-list/photo-of-the-day.png" width="320" height="137" alt="Вид с большой высоты">
+            <img class="photo__image photo__image--hot" src="img/photo-list/photo-of-the-day.png" width="320" height="137" alt="Вид с большой высоты">
             <span class="photo__label">
               панорама дня
             </span>
-            <div class="photo__article">
+            <div class="photo__article photo__article--hot">
               <p class="photo__author">
                 Анна
               </p>
@@ -239,55 +236,61 @@
           Раздел редактирования и размещения фотографий
         </h2>
         <p class="user-photo__subject">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
         </p>
         <form class="user-photo__form" action="https://echo.htmlacademy.ru" method="POST">
-          <img class="user-photo__image" src="img/user-photo-image.png" alt="изображение зимней дороги, окруженной деревьями и освещенной тусклым солнцем">
-          <p class="user-photo__switches edit-switches">
-            <button class="edit-switches__button edit-switches__button--crop" aria-pressed="true" type="button">
-              <span class="visually-hidden">
-                Кадрирование
-              </span>
-            </button>
-            <button class="edit-switches__button edit-switches__button--saturation" type="button">
-              <span class="visually-hidden">
-                Насыщенность
-              </span>
-            </button>
-            <button class="edit-switches__button edit-switches__button--contrast" type="button">
-              <span class="visually-hidden">
-                Контраст
-              </span>
-            </button>
-          </p>
-          <div class="user-photo__range-group">
-            <p class="user-photo__range-item user-photo__range-item--active">
-              <label class="visually-hidden" for="crop">
-                Размер
-              </label>
-              <input class="user-photo__range" type="range" min="1" max="100" id="crop" name="crop" value="80">
-            </p>
-            <p class="user-photo__range-item">
-              <label class="visually-hidden" for="saturation">
-                Насыщенность
-              </label>
-              <input class="user-photo__range" type="range" min="1" max="100" id="saturation" name="saturation" value="20">
-            </p>
-            <p class="user-photo__range-item">
-              <label class="visually-hidden" for="contrast">
-                Контраст
-              </label>
-              <input class="user-photo__range" type="range" min="1" max="100" id="contrast" name="contrast" value="50">
-            </p>
+          <div class="user-photo__form-wrapper">
+            <img class="user-photo__image" src="img/user-photo-image.png" alt="изображение зимней дороги, окруженной деревьями и освещенной тусклым солнцем">
+            <div class="user-photo__edit-wrapper">
+              <div class="user-photo__range-wrapper">
+                <p class="user-photo__switches edit-switches">
+                  <button class="edit-switches__button edit-switches__button--crop" aria-pressed="true" type="button">
+                    <span class="visually-hidden">
+                      Кадрирование
+                    </span>
+                  </button>
+                  <button class="edit-switches__button edit-switches__button--saturation" type="button">
+                    <span class="visually-hidden">
+                      Насыщенность
+                    </span>
+                  </button>
+                  <button class="edit-switches__button edit-switches__button--contrast" type="button">
+                    <span class="visually-hidden">
+                      Контраст
+                    </span>
+                  </button>
+                </p>
+                <div class="user-photo__range-group">
+                  <p class="user-photo__range-item user-photo__range-item--active">
+                    <label class="visually-hidden" for="crop">
+                      Размер
+                    </label>
+                    <input class="user-photo__range" type="range" min="1" max="100" id="crop" name="crop" value="80">
+                  </p>
+                  <p class="user-photo__range-item">
+                    <label class="visually-hidden" for="saturation">
+                      Насыщенность
+                    </label>
+                    <input class="user-photo__range" type="range" min="1" max="100" id="saturation" name="saturation" value="20">
+                  </p>
+                  <p class="user-photo__range-item">
+                    <label class="visually-hidden" for="contrast">
+                      Контраст
+                    </label>
+                    <input class="user-photo__range" type="range" min="1" max="100" id="contrast" name="contrast" value="50">
+                  </p>
+                </div>
+              </div>
+              <p class="user-photo__edit-buttons edit-buttons">
+                <button class="edit-buttons__button button button--pink" type="submit">
+                  Запостить
+                </button>
+                <button class="edit-buttons__button button button--transparent" type="reset">
+                  Отмена
+                </button>
+              </p>
+            </div>
           </div>
-          <p class="user-photo__edit-buttons edit-buttons">
-            <button class="edit-buttons__button button button--pink" type="submit">
-              Запостить
-            </button>
-            <button class="edit-buttons__button button button--transparent" type="reset">
-              Отмена
-            </button>
-          </p>
         </form>
       </section>
     </main>

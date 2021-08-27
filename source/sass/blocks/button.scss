@@ -7,16 +7,37 @@
   border: 3px solid $white;
   border-radius: 30px;
   color: $white;
-  padding: 15px 36px 15px 35px;
+  padding: 15px 5px;
   text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .button--pink {
   color: $pink;
   border-color: $pink;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
 
 .button--transparent {
   color: $gray-500-transparent-1;
   border-color: $gray-500-transparent-1;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
