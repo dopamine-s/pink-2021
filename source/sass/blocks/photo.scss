@@ -93,6 +93,15 @@
 .photo__image {
   display: block;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 300px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
 }
 
 .photo__image--hot {
