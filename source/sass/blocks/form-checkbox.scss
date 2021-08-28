@@ -5,16 +5,8 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    order: 4;
-    width: 620px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
-    grid-column: 1 / span 2;
-    grid-row: 3 / 4;
   }
 }
 
@@ -23,8 +15,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: initial;
-    margin: initial;
+    width: auto;
+    margin: auto;
   }
 }
 

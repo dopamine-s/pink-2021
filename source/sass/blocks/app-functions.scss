@@ -84,7 +84,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 252px);
-    grid-column-gap: 68px;
+    column-gap: 68px;
     background-color: $gray-300;
     margin-top: -50px;
     padding-top: 50px;

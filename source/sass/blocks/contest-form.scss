@@ -28,18 +28,18 @@
 .contest-form__wrapper {
   display: grid;
   margin-bottom: 52px;
-  grid-row-gap: 42px;
+  row-gap: 42px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     margin-bottom: 70px;
-    grid-row-gap: 65px;
+    row-gap: 65px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 74px;
-    grid-row-gap: 69px;
+    column-gap: 74px;
+    row-gap: 69px;
     width: 940px;
     margin-top: 0;
     margin-bottom: 69px;
@@ -52,11 +52,70 @@
   line-height: 18px;
   color: $pink;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contest-form__group {
-  @media (max-width: $mobile-width) {
-    border: none;
+.contest-form__group-personal {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: auto;
+  }
+}
+
+.contest-form__group-radio {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: auto;
+  }
+}
+
+.contest-form__group-contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.contest-form__group-checkbox {
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4;
+    width: 940px;
+  }
+}
+
+.contest-form__group-textarea {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / span 2;
+    grid-row: 4 / 5;
   }
 }
 
