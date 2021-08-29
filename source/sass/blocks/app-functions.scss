@@ -35,7 +35,7 @@
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
     padding: 0 100px;
   }
 
@@ -59,18 +59,17 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/phone-with-smile-tablet.png");
-    background-size: 49%;
     background-position: 0 0;
     padding-left: 310px;
-    padding-top: 75px;
-    padding-bottom: 46px;
+    padding-top: 71px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 350px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 76px;
+    padding-bottom: 65px;
     background-image: url("../img/phone-with-smile-desktop.png");
     background-size: 100%;
     background-position: 50% 0;
@@ -78,14 +77,36 @@
 }
 
 .app-functions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 68px;
+    grid-template-columns: repeat(3, 252px);
+    column-gap: 68px;
     background-color: $gray-300;
-    padding-top: 50px;
     margin-top: -50px;
-    width: 892px;
+    padding-top: 50px;
+    list-style: none;
+  }
+}
+
+.app-functions__list-item {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.app-functions__list-item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -96,16 +117,24 @@
   color: $black;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 14px;
+  margin-top: 0;
+  margin-bottom: 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 32px;
-    grid-row: 1 / 2;
+    margin-bottom: 25px;
+    text-align: center;
+    order: 0;
   }
 }
 
@@ -115,22 +144,33 @@
   color: $gray-500;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 30px;
+  margin-top: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 36px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    padding: 0;
+    padding-left: 7px;
+    padding-right: 7px;
     margin-bottom: 0;
-    grid-row: 2 / 2;
+    text-align: center;
+    order: 1;
   }
 }
 
 .app-functions__item-description:last-of-type {
   margin-bottom: 0;
+}
+
+.app-functions__spacer {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-right: 40px;
+  }
 }

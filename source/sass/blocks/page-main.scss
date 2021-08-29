@@ -1,3 +1,15 @@
+.page-main__app-functions {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
+}
+
 .page-main__article-wrapper {
   @media (min-width: $tablet-width) {
     margin-bottom: 109px;
@@ -14,5 +26,27 @@
 .page-main__reviews {
   @media (min-width: $desktop-width) {
     margin-bottom: 31px;
+  }
+}
+
+.page-main__form {
+  margin-top: 51px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+  }
+}
+
+.page-main__photo {
+  margin-top: 54px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }

@@ -1,0 +1,9 @@
+.edit-buttons__button {
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+}

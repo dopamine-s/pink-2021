@@ -1,11 +1,89 @@
+.user-photo__subject {
+  @include container;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+}
+
 .user-photo__form {
   background-color: $gray-300;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.user-photo__form-wrapper {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-300;
+  }
+}
+
+.user-photo__image {
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / -1;
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.user-photo__edit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
+.user-photo__range-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+}
+
+.user-photo__switches {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
+.user-photo__range-group {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
 }
 
 .user-photo__range-item {
-  display: none;
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .user-photo__range-item--active {
+  margin: 0;
   display: block;
+}
+
+.user-photo__edit-buttons {
+  margin: 0;
 }

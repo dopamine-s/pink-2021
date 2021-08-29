@@ -1,8 +1,33 @@
-.form-group ul {
-  list-style: none;
+.form-group {
+  @media (max-width: $mobile-width) {
+    border: none;
+  }
 }
 
-.form-group__textarea {
+.form-group__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-group--personal {
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.form-group--contacts {
+  @include container;
+  padding: 0;
+}
+
+.form-group--textarea {
+  @include container;
+  padding: 0;
   font-size: 18px;
   border: 2px solid $gray-200;
   border-radius: 1px;
@@ -10,4 +35,5 @@
 
 .form-group__textarea::placeholder {
   color: $gray-500;
+  font-size: 18px;
 }
