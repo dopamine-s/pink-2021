@@ -1,13 +1,27 @@
+.site-list__item {
+  box-shadow: 0 1px 0 $black, 0 2px 0 $white-transparent-15;
+}
+
 .site-list__item a {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
+
+  @media (max-width: $desktop-width) {
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: $pink-transparent-3;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     line-height: 18px;

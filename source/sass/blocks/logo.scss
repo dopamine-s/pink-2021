@@ -1,0 +1,32 @@
+.logo__header-logo--tablet,
+.logo__header-logo--desktop {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo__header-logo--mobile,
+.logo__header-logo--desktop {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__header-logo--mobile,
+.logo__header-logo--tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__footer-logo--desktop {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__footer-logo--tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
