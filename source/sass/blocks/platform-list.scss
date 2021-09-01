@@ -1,0 +1,45 @@
+.platform-list__item {
+  position: relative;
+}
+
+.platform-list__link--apple::after,
+.platform-list__link--android::after,
+.platform-list__link--microsoft::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.platform-list__link--apple::after {
+  top: -6px;
+  right: 2px;
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/apple-logo.svg");
+}
+
+.platform-list__link--android::after {
+  top: 0;
+  left: 33px;
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/android-logo.svg");
+}
+
+.platform-list__link--microsoft::after {
+  top: 6px;
+  left: 111px;
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/microsoft-logo.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 5px;
+    left: 113px;
+  }
+}

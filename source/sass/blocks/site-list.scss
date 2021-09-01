@@ -1,5 +1,7 @@
 .site-list__item {
-  box-shadow: 0 1px 0 $black, 0 2px 0 $white-transparent-15;
+  @media (max-width: $desktop-width) {
+    box-shadow: 0 1px 0 $black, 0 2px 0 $white-transparent-15;
+  }
 }
 
 .site-list__item a {
@@ -29,5 +31,17 @@
     text-transform: none;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.site-list__item:nth-of-type(4n+1) a {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.site-list__item:nth-of-type(4n+4) a {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }

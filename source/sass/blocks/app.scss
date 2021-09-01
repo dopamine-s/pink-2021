@@ -1,14 +1,8 @@
 .app {
   background-color: $gray-800;
-  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     background: none;
-    padding-bottom: 119px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 130px;
   }
 }
 
@@ -25,21 +19,23 @@
 
 .app__button {
   margin-top: 28px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-bottom: 46px;
+    margin-bottom: 38px;
     padding-left: 45px;
     padding-right: 46px;
     width: 300px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    font-size: 21px;
+    padding: 16px 20px;
+    margin-bottom: 60px;
   }
 }
 
@@ -50,16 +46,17 @@
 .app__platform-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 28px;
+  margin-bottom: 71px;
   margin-left: 47px;
   margin-right: 47px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-left: 55px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 58px;
+    margin-bottom: 96px;
   }
 }
 
@@ -68,10 +65,17 @@
   line-height: 24px;
   color: $white;
   text-align: center;
-  margin: 0;
+  padding-bottom: 31px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 125px;
+    padding-top: 5px;
   }
 }
