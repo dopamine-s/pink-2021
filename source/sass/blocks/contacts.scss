@@ -7,9 +7,10 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   padding-left: 49px;
   padding-right: 49px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -29,12 +30,24 @@
 }
 
 .contacts__map {
+  position: relative;
   background-image: url("../img/map.png");
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 200px;
+
+  &::before {
+    content: "";
+    padding-top: 6.5%;
+    background: linear-gradient(to right top, transparent 49.5%, $white 50%) left / 50.02% 100% no-repeat,
+      linear-gradient(to left top, transparent 49.5%, $white 50%) right / 50.02% 100% no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet.png");
@@ -51,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
   margin-left: 40px;
   margin-right: 40px;
   min-height: 231px;
@@ -76,7 +89,6 @@
 
 .contacts b {
   display: block;
-  margin-bottom: 13px;
 }
 
 .contacts__text {
@@ -95,7 +107,7 @@
 }
 
 .contacts__text:nth-of-type(1) {
-  margin-bottom: 31px;
+  margin-bottom: 18px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
@@ -103,7 +115,7 @@
 }
 
 .contacts__text:nth-of-type(2) {
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 
   @media (min-width: $desktop-width) {
     order: 3;

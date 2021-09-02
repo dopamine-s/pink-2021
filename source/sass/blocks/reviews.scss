@@ -23,8 +23,8 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  padding-top: 50px;
-  padding-bottom: 31px;
+  padding-top: 41px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -57,12 +57,12 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   line-height: 30px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -78,7 +78,5 @@
 }
 
 .reviews__toggles {
-  margin: 0;
   padding: 0;
-  text-align: center;
 }

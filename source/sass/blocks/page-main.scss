@@ -1,12 +1,32 @@
 .page-main__app-functions {
   margin-top: 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: linear-gradient(-5deg, $gray-300 49.5%, $white 50%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 161%;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 47px;
+
+    &::before {
+      height: 133%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 63px;
+
+    &::before {
+      height: 130%;
+    }
   }
 }
 
@@ -27,6 +47,14 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 31px;
   }
+}
+
+.page-main__rates {
+  margin-bottom: 41px;
+}
+
+.page-main__contacts {
+  margin-bottom: 40px;
 }
 
 .page-main__form {

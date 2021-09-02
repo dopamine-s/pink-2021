@@ -45,10 +45,6 @@
   }
 }
 
-.app-functions__wrapper {
-  background-color: $gray-300;
-}
-
 .app-functions__list-wrapper {
   @include container;
   background-image: url("../img/phone-with-smile.png");

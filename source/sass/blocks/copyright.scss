@@ -1,3 +1,20 @@
+.copyright {
+  display: flex;
+  min-width: 130px;
+  justify-content: space-between;
+}
+
 .copyright__text {
   line-height: 18px;
+  margin: 0;
+  align-self: center;
+  padding-top: 1px;
+}
+
+.copyright__link {
+  margin: 0;
+}
+
+.copyright__link img {
+  padding-top: 10px;
 }

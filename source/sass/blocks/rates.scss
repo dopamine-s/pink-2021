@@ -1,8 +1,8 @@
 .rates {
   background-color: $gray-300;
   min-height: 460px;
-  padding-top: 82px;
-  padding-bottom: 50px;
+  padding-top: 81px;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     min-height: 344px;
@@ -33,7 +33,8 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  padding-bottom: 45px;
+  padding-bottom: 27px;
+  margin-bottom: 14px;
 }
 
 .rates__table {
@@ -44,8 +45,8 @@
 
 .rates__item {
   background-color: $gray-500;
-  height: 94px;
-  width: 276px;
+  height: 98px;
+  width: 280px;
   border-right: 2px solid $gray-200;
 
   @media (min-width: $tablet-width) {
@@ -59,12 +60,37 @@
   }
 }
 
+.rates__item--current {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "Хит";
+    position: absolute;
+    text-align: center;
+    padding-bottom: 4px;
+    width: 100px;
+    height: 0;
+    border-bottom: 23px solid $pink;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    top: 12px;
+    left: -24px;
+    color: $white;
+    transform: rotate(-45deg);
+  }
+}
+
 .rates__name {
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: $white;
-  margin: 0;
+  margin-top: 3px;
+  margin-bottom: auto;
 }
 
 .rates__cost {
@@ -72,15 +98,38 @@
   font-size: 18px;
   text-transform: uppercase;
   color: $white;
-  margin: 0;
+  margin-top: -4px;
+  margin-bottom: 19px;
 }
 
 .rates__advantage {
-  height: 59px;
+  position: relative;
+  height: 60px;
   border: 2px solid $gray-200;
   line-height: 30px;
   text-transform: uppercase;
   padding-left: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    right: 20px;
+    top: 17px;
+  }
+
+  &--active {
+    &::after {
+      width: 31px;
+      height: 21px;
+      right: 18px;
+      background-image: url("../img/yes.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     text-transform: none;
