@@ -20,4 +20,15 @@
 
 .page-footer__social {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -12px;
+    margin-top: 2px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet-width) {
+    margin-top: -13px;
+  }
 }

@@ -4,6 +4,11 @@
   list-style: none;
   padding: 0;
   margin-left: 7px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+    margin-top: 16px;
+  }
 }
 
 .social__item {
@@ -14,8 +19,18 @@
   margin-right: 9px;
   padding-top: 10px;
   padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 6px;
+  }
 }
 
-.social__item:not(:first-of-type) {
+.social__item:nth-of-type(2) {
   padding-left: 20px;
+  padding-top: 12px;
+}
+
+.social__item:nth-of-type(3) {
+  padding-left: 19px;
+  padding-top: 10px;
 }

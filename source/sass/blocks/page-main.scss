@@ -17,7 +17,7 @@
     margin-top: 47px;
 
     &::before {
-      height: 133%;
+      height: 136%;
     }
   }
 
@@ -32,29 +32,56 @@
 
 .page-main__article-wrapper {
   @media (min-width: $tablet-width) {
-    margin-bottom: 109px;
-    padding-bottom: 29px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $gray-300;
     margin-bottom: 72px;
-    padding-bottom: 120px;
+    padding-bottom: 65px;
   }
 }
 
 .page-main__reviews {
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 12px;
   }
 }
 
 .page-main__rates {
   margin-bottom: 41px;
+
+  &::before {
+    content: "";
+    background: linear-gradient(-3.5deg, $gray-300 49.5%, $white 50%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 207%;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+
+    &::before {
+      background: linear-gradient(-5deg, $gray-300 49.5%, $white 50%);
+      height: 181%;
+    }
+  }
 }
 
 .page-main__contacts {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .page-main__form {

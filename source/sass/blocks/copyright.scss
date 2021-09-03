@@ -9,6 +9,11 @@
   margin: 0;
   align-self: center;
   padding-top: 1px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-right: 13px;
+  }
 }
 
 .copyright__link {
