@@ -44,7 +44,7 @@
 
 .page-main__reviews {
   @media (min-width: $desktop-width) {
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -71,7 +71,7 @@
 
     &::before {
       background: linear-gradient(-5deg, $gray-300 49.5%, $white 50%);
-      height: 181%;
+      height: 182%;
     }
   }
 }

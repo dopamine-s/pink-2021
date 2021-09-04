@@ -86,15 +86,35 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
+    display: none;
+  }
+}
+
+.reviews__controls {
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__control {
+  position: absolute;
+  width: 22px;
+  height: 41px;
+  top: -194px;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  cursor: pointer;
+
+  &--left {
+    background-image: url("../img/left-arrow.svg");
+    left: 0;
+  }
+
+  &--right {
+    background-image: url("../img/right-arrow.svg");
+    right: 0;
   }
 }
