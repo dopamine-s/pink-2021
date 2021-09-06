@@ -1,0 +1,48 @@
+.slider__toggles {
+  display: flex;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
+  background-color: $gray-500-transparent-3;
+  border: 3px solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin-right: auto;
+  }
+
+  &:hover {
+    background-color: $gray-500-transparent-6;
+  }
+
+  &:active {
+    background-color: $gray-500-transparent-1;
+  }
+
+  &--gray {
+    border: 3px solid $gray-300;
+  }
+
+  &--current {
+    background-color: $white;
+    border-color: $gray-500;
+    cursor: default;
+
+    &:hover {
+      background-color: $white;
+    }
+
+    &:active {
+      background-color: $white;
+    }
+  }
+}

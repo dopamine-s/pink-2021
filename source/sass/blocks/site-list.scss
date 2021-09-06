@@ -1,7 +1,13 @@
+.site-list__item {
+  @media (max-width: $desktop-width) {
+    box-shadow: 0 1px 0 $black, 0 2px 0 $white-transparent-15;
+  }
+}
+
 .site-list__item a {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
   font-size: 18px;
   line-height: 32px;
@@ -9,11 +15,33 @@
   color: $white;
   text-transform: uppercase;
 
+  @media (max-width: $desktop-width) {
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: $pink-transparent-3;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.site-list__item:nth-of-type(4n+1) a {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.site-list__item:nth-of-type(4n+4) a {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }

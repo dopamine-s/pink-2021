@@ -9,6 +9,7 @@
     background-image: url("../img/timer-tablet.svg");
     background-repeat: no-repeat;
     background-position: 0 54px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,15 +27,15 @@
     line-height: 36px;
     margin-top: 0;
     margin-left: 310px;
-    margin-bottom: 24px;
-    padding-top: 102px;
+    margin-bottom: 10px;
+    padding-top: 96px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
     margin-left: 370px;
-    margin-bottom: 37px;
-    padding-top: 98px;
+    margin-bottom: 25px;
+    padding-top: 95px;
   }
 }
 
@@ -42,14 +43,14 @@
   line-height: 24px;
   margin-top: 0;
   margin-left: 310px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   padding-right: 14px;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
     margin-left: 370px;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
   }
 }
 
@@ -60,17 +61,30 @@
   font-weight: 400;
   color: $pink;
   margin-left: 310px;
-
+  text-decoration: underline;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
     margin-left: 370px;
+    margin-bottom: 25px;
   }
 }
 
 .article__spacer {
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding-right: 10px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &--subject {
+      padding-right: 150px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--text {
+      padding-right: 40px;
+    }
   }
 }

@@ -8,6 +8,9 @@
 
   @media (min-width: $desktop-width) {
     min-height: 292px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }
 
@@ -23,19 +26,20 @@
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  padding-top: 50px;
-  padding-bottom: 31px;
+  padding-top: 41px;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-top: 11px;
-    padding-bottom: 17px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
     line-height: 30px;
+    padding-bottom: 2px;
   }
 }
 
@@ -46,8 +50,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
-    padding-bottom: 10px;
-    margin: 0;
+    margin: 0 0 21px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,14 +60,15 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   line-height: 30px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
     font-size: 18px;
     padding-left: 0;
     padding-right: 0;
@@ -74,11 +78,43 @@
   @media (min-width: $desktop-width) {
     padding-left: 125px;
     padding-right: 125px;
+    margin-top: 112px;
   }
 }
 
 .reviews__toggles {
-  margin: 0;
   padding: 0;
-  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__controls {
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__control {
+  position: absolute;
+  width: 22px;
+  height: 41px;
+  top: -194px;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  cursor: pointer;
+
+  &--left {
+    background-image: url("../img/left-arrow.svg");
+    left: 0;
+  }
+
+  &--right {
+    background-image: url("../img/right-arrow.svg");
+    right: 0;
+  }
 }
