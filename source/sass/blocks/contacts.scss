@@ -40,7 +40,7 @@
 
   &::before {
     content: "";
-    padding-top: 6.5%;
+    padding-top: 33px;
     background: linear-gradient(to right top, transparent 49.5%, $white 50%) left / 50.02% 100% no-repeat,
       linear-gradient(to left top, transparent 49.5%, $white 50%) right / 50.02% 100% no-repeat;
     position: absolute;
@@ -49,28 +49,12 @@
     right: 0;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/map-marker.svg");
-    background-repeat: no-repeat;
-    width: 36px;
-    height: 36px;
-    top: 95px;
-    left: 232px;
-  }
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet.png");
     min-height: 374px;
 
     &::before {
-      padding-top: 10%;
-    }
-
-    &::after {
-      top: 194px;
-      left: 315px;
+      padding-top: 66px;
     }
   }
 
@@ -79,12 +63,7 @@
     min-height: 502px;
 
     &::before {
-      padding-top: 8.5%;
-    }
-
-    &::after {
-      top: 265px;
-      left: 584px;
+      padding-top: 100px;
     }
   }
 }

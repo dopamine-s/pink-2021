@@ -38,17 +38,15 @@
 .page-header__toggle {
   position: relative;
   padding: 0;
-  margin-top: 23px;
-  margin-right: 20px;
-  width: 23px;
-  height: 23px;
+  width: 50px;
+  height: 24px;
   align-self: center;
   cursor: pointer;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 27px;
     margin-right: 0;
   }
 
@@ -136,8 +134,8 @@
 .page-header__top-bar--opened .page-header__toggle {
   &::before,
   &::after {
-    top: -17px;
-    left: 10px;
+    top: -3px;
+    left: 17px;
     width: 3px;
     height: 30px;
   }
@@ -149,15 +147,30 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      left: 37px;
+    }
+  }
 }
 
 .page-header__top-bar--closed .page-header__toggle {
   &::before {
-    top: -12px;
+    top: 0;
     right: 0;
     width: 50px;
     height: 4px;
     box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  }
+
+  &:hover::before {
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active::before {
+    box-shadow: 0 10px 0 0 $pink-transparent-3, 0 20px 0 0 $pink-transparent-3;
   }
 }
 

@@ -4,7 +4,7 @@
 
   &::before {
     content: "";
-    background: linear-gradient(-5deg, $gray-300 49.5%, $white 50%);
+    background: linear-gradient(-5deg, $gray-300 49.9%, $white 50%);
     position: absolute;
     left: 0;
     right: 0;
@@ -25,7 +25,7 @@
     margin-top: 63px;
 
     &::before {
-      height: 130%;
+      height: 131%;
     }
   }
 }
@@ -80,7 +80,11 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
   }
 }
 
