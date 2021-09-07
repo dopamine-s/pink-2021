@@ -1,0 +1,56 @@
+.filter-range {
+  position: relative;
+}
+
+.filter-range__bar {
+  position: absolute;
+  left: 50%;
+  width: 240px;
+  height: 2px;
+  background-color: $gray-500;
+  transform: translate(-50%, -50%);
+}
+
+.filter-range__toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: $gray-500;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  &:active {
+    background-color: $pink;
+  }
+}
+
+.filter-range:nth-of-type(1) .filter-range__toggle {
+  left: 83%;
+
+  @media (min-width: $tablet-width) {
+    left: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 27%;
+  }
+}
+
+.filter-range:nth-of-type(2) .filter-range__toggle {
+  @media (min-width: $tablet-width) {
+    left: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 88%;
+  }
+}
+
+.filter-range:nth-of-type(3) .filter-range__toggle {
+  @media (min-width: $desktop-width) {
+    left: 58%;
+  }
+}

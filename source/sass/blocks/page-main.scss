@@ -97,8 +97,8 @@
 }
 
 .page-main__photo {
-  margin-top: 54px;
-  margin-bottom: 29px;
+  margin-top: 44px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     margin-top: 100px;
@@ -108,4 +108,8 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 13px;
   }
+}
+
+.page-main__user-photo {
+  margin-bottom: 40px;
 }
