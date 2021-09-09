@@ -1,8 +1,3 @@
-.edit-switches {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .edit-switches__button {
   border: none;
   background-color: transparent;
@@ -10,10 +5,46 @@
   margin-right: 35px;
   margin-bottom: 34px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.edit-switches__button path {
+  @media (min-width: $desktop-width) {
+    fill: $pink;
+  }
+}
+
+.edit-switches__button g {
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.edit-switches__button:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .edit-switches__button:last-of-type {
   margin-right: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .edit-switches__button--big {
@@ -23,7 +54,11 @@
 }
 
 .edit-switches__button--small {
-  @media (max-width: $mobile-width) and (min-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

@@ -1,9 +1,25 @@
 .edit-buttons__button {
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 260px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 183px;
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
+
+.edit-buttons__button:last-of-type {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
