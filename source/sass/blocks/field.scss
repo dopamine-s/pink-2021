@@ -1,14 +1,20 @@
 .field {
   color: $pink;
   text-transform: uppercase;
+  margin-left: 43px;
 }
 
 .field__input {
   font-size: 18px;
   border: 2px solid $gray-200;
-  border-radius: 1px;
+  border-radius: 3px;
+  display: block;
+  margin-top: 4px;
+  margin-left: 20px;
+  padding: 21px 37px 18px 20px;
 }
 
 .field__input::placeholder {
   color: $gray-500;
+  font-family: "Open Sans", "Arial", sans-serif;
 }

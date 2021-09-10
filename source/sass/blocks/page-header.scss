@@ -135,7 +135,7 @@
   &::before,
   &::after {
     top: -3px;
-    left: 17px;
+    left: 37px;
     width: 3px;
     height: 30px;
   }
@@ -146,13 +146,6 @@
 
   &::after {
     transform: rotate(-45deg);
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before,
-    &::after {
-      left: 37px;
-    }
   }
 }
 

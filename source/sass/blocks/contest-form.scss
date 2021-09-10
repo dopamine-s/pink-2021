@@ -3,7 +3,7 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -27,8 +27,7 @@
 
 .contest-form__wrapper {
   display: grid;
-  margin-bottom: 52px;
-  row-gap: 42px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -54,10 +53,12 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .contest-form__group-personal {
   width: 320px;
+  margin: 0 auto 80px auto;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -72,6 +73,16 @@
 }
 
 .contest-form__group-radio {
+  margin-bottom: 38px;
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+  }
+
+  @media (max-width: $mobile-width) {
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     order: 2;
     width: 620px;
@@ -84,7 +95,23 @@
   }
 }
 
+.contest-form__group-radio::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 660px;
+  top: -75px;
+  left: 0;
+  background-color: $gray-300;
+  z-index: -1;
+}
+
 .contest-form__group-contacts {
+  @include container;
+  margin-bottom: 80px;
+  padding: 0;
+
+
   @media (min-width: $tablet-width) {
     order: 3;
   }
@@ -95,7 +122,15 @@
   }
 }
 
+.contest-form__group-contacts label {
+  margin-left: 44px;
+}
+
 .contest-form__group-checkbox {
+  @media (max-width: $mobile-width) {
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     order: 4;
     width: 620px;
@@ -108,7 +143,20 @@
   }
 }
 
+.contest-form__group-checkbox::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 660px;
+  top: -75px;
+  left: 0;
+  background-color: $gray-300;
+  z-index: -1;
+}
+
 .contest-form__group-textarea {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     order: 5;
   }
@@ -117,6 +165,10 @@
     grid-column: 1 / span 2;
     grid-row: 4 / 5;
   }
+}
+
+.contest-form__group-textarea legend {
+  margin-bottom: 12px;
 }
 
 .contest-form__button-wrapper {
@@ -128,8 +180,15 @@
   }
 }
 
+.contest-form__button {
+  margin-left: 20px;
+  margin-bottom: 34px;
+}
+
 .contest-form__mark {
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 .contest-form__mark span {
