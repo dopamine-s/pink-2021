@@ -9,4 +9,20 @@
   background-color: $green-500;
   color: $white;
   padding: 17px 46px 18px 45px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 56px 18px 55px;
+  }
+}
+
+.form-button:hover,
+.form-button:focus,
+.form-button:active {
+  background-color: $green-600;
+  border-color: $green-600;
+}
+
+.form-button:active {
+  color: $white-transparent-30;
 }

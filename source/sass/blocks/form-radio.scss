@@ -7,6 +7,8 @@
     background-color: $white;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid $gray-200;
+    border-radius: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,10 +28,21 @@
   margin-top: 40px;
   margin-left: 65px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-left: 94px;
+  }
 }
 
 .form-radio__item {
   margin-bottom: 43px;
+}
+
+.form-radio__item:last-of-type {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form-radio label {
@@ -43,7 +56,6 @@
 .form-radio__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 1px;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -65,6 +77,10 @@
   border: 2px solid $gray-200;
   border-radius: 50%;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    left: -61px;
+  }
 }
 
 .form-radio__input:checked + label::after {
@@ -74,4 +90,17 @@
   height: 15px;
   background-color: $pink;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -48px;
+  }
+}
+
+.form-radio__input:focus + label::before,
+.form-radio__input:hover + label::before {
+  border: 2px solid $gray-500;
+}
+
+.form-radio__input:active + label::before {
+  border: 2px solid $pink;
 }

@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="page__header page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__top-bar page-header__top-bar--closed">
+        <div class="page-header__top-bar">
           <div class="page-header__inner-wrapper">
             <a class="page-header__logo logo" href="index.html">
               <svg class="logo__header-logo logo__header-logo--mobile" width="74" height="23" viewBox="0 0 74 23" fill="none">
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="page-header__content-wrapper page-header__content-wrapper--not-main">
-        <h1 class="page-header__title page-header__title--not--main">
+        <h1 class="page-header__title page-header__title--not--main page-header__title--form">
           Конкурс на самое безбашенное путешествие с Пинк
         </h1>
       </div>
@@ -96,28 +96,28 @@
             </legend>
             <ul class="form-group__list">
               <li class="form-group__item">
-                <label class="form-group__field field">
+                <label class="form-group__label" for="surname">
                   Фамилия:
-                  <input class="field__input" name="surname" type="text" placeholder="Укажите фамилию *">
                 </label>
+                <input class="form-group__input" id="surname" name="surname" type="text" placeholder="Укажите фамилию *">
               </li>
               <li class="form-group__item">
-                <label class="form-group__field field">
+                <label class="form-group__label" for="name">
                   Имя:
-                  <input class="field__input" name="name" type="text" placeholder="Введите ваше имя *">
                 </label>
+                <input class="form-group__input" id="name" name="name" type="text" placeholder="Введите ваше имя *">
               </li>
               <li class="form-group__item">
-                <label class="form-group__field field">
+                <label class="form-group__label" for="fathername">
                   Отчество:
-                  <input class="field__input" name="fathername" type="text" placeholder="Ну и отчество тоже">
                 </label>
+                  <input class="form-group__input" id="fathername" name="fathername" type="text" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
           <fieldset class="contest-form__group contest-form__group-checkbox form-checkbox">
             <legend class="contest-form__legend form-checkbox__legend">
-              Ваши безбашенные<span><br></span>достижения в путешествии
+              Ваши безбашенные<span><br></span> достижения в путешествии
             </legend>
             <div class="form-checkbox__wrapper">
               <ul class="form-checkbox__list">
@@ -149,21 +149,21 @@
             </div>
           </fieldset>
           <fieldset class="contest-form__group contest-form__group-contacts form-group form-group--contacts">
-            <legend class="visually-hidden">
-              Контактные данные
+            <legend class="contest-form__legend">
+              Контактная информация
             </legend>
             <ul class="form-group__list">
               <li class="form-group__item">
-                <label class="form-group__field field">
-                  номер телефона:
-                  <input class="field__input" name="phone" type="tel" placeholder="Номер, пожалуйста">
+                <label class="form-group__label" for="phone">
+                  номер телефона
                 </label>
+                <input class="form-group__input" id="phone" name="phone" type="tel" placeholder="Номер, пожалуйста">
               </li>
               <li class="form-group__item">
-                <label class="form-group__field field">
-                  адрес почты:
-                  <input class="field__input" name="email" type="email" placeholder="Введите почту *">
+                <label class="form-group__label" for="email">
+                  адрес почты
                 </label>
+                <input class="form-group__input" id="email" name="email" type="email" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
@@ -183,7 +183,7 @@
                 </li>
                 <li class="form-radio__item">
                   <input class="form-radio__input visually-hidden" type="radio" name="app-type" value="windows-phone" id="windows-phone"/>
-                  <label for="windows-phone">Windows-Phone</label>
+                  <label for="windows-phone">Windows Phone</label>
                 </li>
               </ul>
             </div>

@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0 0 32px 0;
   background-color: $gray-300;
+  border: 2px solid $gray-200;
+  border-radius: 3px;
 
   @media (max-width: $mobile-width) {
     border: none;
@@ -23,11 +25,12 @@
 .form-checkbox__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: auto;
     margin: auto;
+    padding-bottom: 37px;
   }
 }
 
@@ -36,7 +39,6 @@
   margin-left: 24px;
   position: relative;
   cursor: pointer;
-  user-select: none;
 }
 
 .form-checkbox__list {
@@ -44,6 +46,11 @@
   margin-top: 43px;
   margin-left: 55px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-left: 93px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -82,4 +89,13 @@
   height: 16px;
   background-image: url("../img/checked.svg");
   background-repeat: no-repeat;
+}
+
+.form-checkbox__input:focus + label::before,
+.form-checkbox__input:hover + label::before {
+  border: 2px solid $gray-500;
+}
+
+.form-checkbox__input:active + label::before {
+  border: 2px solid $pink;
 }

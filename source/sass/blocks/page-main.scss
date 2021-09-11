@@ -94,6 +94,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 92px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 91px;
+    margin-bottom: 68px;
   }
 }
 

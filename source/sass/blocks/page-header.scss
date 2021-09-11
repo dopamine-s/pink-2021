@@ -242,8 +242,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 59px;
-    padding-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 89px;
   }
 }
 
@@ -333,5 +333,12 @@
     width: 940px;
     padding-left: 200px;
     padding-right: 200px;
+  }
+}
+
+.page-header__title--form {
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
