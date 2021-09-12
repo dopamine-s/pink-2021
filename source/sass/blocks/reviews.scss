@@ -107,14 +107,24 @@
   background-repeat: no-repeat;
   background-color: inherit;
   cursor: pointer;
+  fill: $gray-500;
+  opacity: 0.3;
 
   &--left {
-    background-image: url("../img/left-arrow.svg");
+    background-image: url("../img/arrow-left.svg");
     left: 0;
   }
 
   &--right {
-    background-image: url("../img/right-arrow.svg");
+    background-image: url("../img/arrow-right.svg");
     right: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
