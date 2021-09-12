@@ -126,30 +126,18 @@
 
 .user-photo__range-item:nth-of-type(1) .filter-range__toggle {
   @media (min-width: $tablet-width) {
-    left: 79%;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 81%;
+    left: 80%;
   }
 }
 
 .user-photo__range-item:nth-of-type(2) .filter-range__toggle {
   @media (min-width: $tablet-width) {
-    left: 12%;
-  }
-
-  @media (min-width: $desktop-width) {
     left: 13%;
   }
 }
 
 .user-photo__range-item:nth-of-type(3) .filter-range__toggle {
   @media (min-width: $tablet-width) {
-    left: 48%;
-  }
-
-  @media (min-width: $desktop-width) {
     left: 48%;
   }
 }
@@ -168,5 +156,10 @@
     padding-left: 0;
     margin-left: 0;
     margin-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

@@ -14,14 +14,17 @@
 
   @media (min-width: $desktop-width) {
     width: 183px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: 40px;
+    margin-left: 0;
+    margin-right: 44px;
   }
 }
 
 .edit-buttons__button:last-of-type {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
   }
 }
