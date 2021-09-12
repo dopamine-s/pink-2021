@@ -26,6 +26,10 @@
 
 .form-group__label {
   margin-left: 43px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .form-group__input {
@@ -74,6 +78,16 @@
     display: grid;
     grid-template-columns: min-content 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form-group--personal .form-group__item:first-of-type {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .form-group--contacts {
@@ -84,6 +98,13 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $gray-200;
     border-radius: 3px;
+  }
+}
+
+.form-group--contacts .form-group__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -101,18 +122,25 @@
     content: "";
     position: absolute;
     top: 4px;
-    right: -60px;
-    width: 63px;
-    height: 63px;
+    right: -59px;
+    width: 61px;
+    height: 64px;
     border-radius: 3px;
     background-color: $gray-200;
     background-image: url("../img/phone-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-top: 29px;
+    margin-bottom: 12px;
+    width: 334px;
+  }
 }
 
-.form-group--contacts .form-group__item:last-of-type {
+.form-group--contacts .form-group__item:nth-of-type(2) {
   @media (min-width: $tablet-width) {
     margin-top: 24px;
     margin-bottom: 26px;
@@ -120,6 +148,14 @@
 
   &::before {
     background-image: url("../img/mail-icon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 16px;
+    margin-right: 0;
+    margin-top: 29px;
+    margin-bottom: 12px;
+    width: 334px;
   }
 }
 
@@ -168,6 +204,13 @@
     margin-top: 24px;
     margin-bottom: 41px;
     padding-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    height: 129px;
+    margin-top: 20px;
+    margin-bottom: 33px;
   }
 }
 
