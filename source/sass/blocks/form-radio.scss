@@ -7,22 +7,54 @@
     background-color: $white;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid $gray-200;
+    border-radius: 3px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: 0;
+    margin-top: -9px;
   }
 }
 
 .form-radio__list {
   list-style: none;
-  margin: 0;
+  margin-top: 40px;
+  margin-left: 65px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-left: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 108px;
+    margin-right: 0;
+  }
+}
+
+.form-radio__item {
+  margin-bottom: 43px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.form-radio__item:last-of-type {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form-radio label {
   font-size: 18px;
+  margin-left: 25px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .form-radio__wrapper {
@@ -33,4 +65,46 @@
     width: auto;
     margin: auto;
   }
+}
+
+.form-radio__input + label::before,
+.form-radio__input + label::after {
+  content: "";
+  position: absolute;
+}
+
+.form-radio__input + label::before {
+  left: -70px;
+  top: -8px;
+  width: 41px;
+  height: 41px;
+  border: 2px solid $gray-200;
+  border-radius: 50%;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    left: -61px;
+  }
+}
+
+.form-radio__input:checked + label::after {
+  left: -57px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -48px;
+  }
+}
+
+.form-radio__input:focus + label::before,
+.form-radio__input:hover + label::before {
+  border: 2px solid $gray-500;
+}
+
+.form-radio__input:active + label::before {
+  border: 2px solid $pink;
 }

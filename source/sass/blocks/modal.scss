@@ -1,0 +1,130 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  padding: 39px 23px 49px;
+  background-color: $white;
+  box-shadow: 0 7px 15px $black-transparent-15;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding: 40px 80px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-image: linear-gradient(to top, $gray-300, $gray-300 163px, $white 163px, $white);
+  }
+
+  &--success {
+    background-image: linear-gradient(to top, $gray-300, $gray-300 163px, $white 163px, $white);
+
+
+    @media (min-width: $tablet-width) {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+
+  &--visible {
+    display: block;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+}
+
+.modal__subject {
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $gray-500;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-bottom: 112px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.modal--success .modal__subject {
+  margin-bottom: 85px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.modal__button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 16px 20px 17px;
+  background-color: $green-500;
+  border: none;
+  border-radius: 3px;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  &:hover {
+    background-color: $green-600;
+  }
+
+  &:active {
+    background-color: $green-600;
+    color: $white-transparent-30;
+  }
+
+  &:disabled {
+    background-color: $gray-200;
+    color: $white;
+  }
+}
+
+.modal--success .modal__button {
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
+}

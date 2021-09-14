@@ -1,39 +1,228 @@
-.form-group {
-  @media (max-width: $mobile-width) {
-    border: none;
-  }
-}
-
 .form-group__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.form-group--personal {
-  padding: 0;
-  margin: 0 auto;
+.form-group__item {
+  margin-bottom: 17px;
+  color: $pink;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.form-group__item:nth-last-of-type(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.form-group__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-group__label {
+  margin-left: 43px;
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-    margin-right: 0;
+  }
+}
+
+.form-group__input {
+  font-size: 18px;
+  border: 2px solid $gray-200;
+  border-radius: 3px;
+  display: block;
+  margin-top: 4px;
+  margin-left: 20px;
+  padding: 21px 37px 18px 20px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 19px;
+    padding-right: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 80px;
+  }
+}
+
+.form-group__input::placeholder {
+  color: $gray-500;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.form-group__input:hover {
+  border: 2px solid $gray-500;
+}
+
+.form-group__input:focus {
+  outline: none;
+  border: 2px solid $pink;
+}
+
+.form-group--personal {
+  padding: 0;
+  border: none;
+}
+
+.form-group--personal label {
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    margin-left: 0;
+  }
+}
+
+.form-group--personal .form-group__item {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form-group--personal .form-group__item:first-of-type {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
   }
 }
 
 .form-group--contacts {
-  @include container;
-  padding: 0;
+  @media (max-width: $mobile-width) {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $gray-200;
+    border-radius: 3px;
+  }
+}
+
+.form-group--contacts .form-group__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group--contacts .form-group__item {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 0;
+    display: grid;
+    margin-top: 31px;
+    margin-left: 39px;
+    margin-right: 58px;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 0;
+      z-index: -1;
+      width: 62px;
+      height: 62px;
+      border-radius: 3px;
+      background-color: $gray-200;
+      background-image: url("../img/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-top: 29px;
+    margin-bottom: 12px;
+    width: 394px;
+  }
+}
+
+.form-group--contacts .form-group__item:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 26px;
+  }
+
+  &::before {
+    background-image: url("../img/mail-icon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 16px;
+    margin-right: 0;
+    margin-top: 29px;
+    margin-bottom: 12px;
+  }
+}
+
+.form-group--contacts legend {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.form-group--contacts label {
+  margin-left: 44px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    margin-top: 10px;
+    margin-left: 38px;
+  }
 }
 
 .form-group--textarea {
-  @include container;
-  padding: 0;
-  font-size: 18px;
   border: 2px solid $gray-200;
-  border-radius: 1px;
+  border-radius: 3px;
+
+  @media (max-width: $mobile-width) {
+    border: none;
+  }
 }
+
+.form-group__textarea {
+  width: 280px;
+  height: 200px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border: 2px solid $gray-200;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 193px;
+    margin-left: 58px;
+    margin-top: 30px;
+    margin-bottom: 41px;
+    padding-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    height: 129px;
+    margin-top: 26px;
+    margin-bottom: 33px;
+  }
+}
+
 
 .form-group__textarea::placeholder {
   color: $gray-500;
-  font-size: 18px;
 }

@@ -3,15 +3,15 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-bottom: 78px;
+    margin-bottom: 70px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -25,22 +25,36 @@
 
 .user-photo__form-wrapper {
   @include container;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $gray-300;
+    padding-bottom: 33px;
   }
 }
 
 .user-photo__image {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     grid-row: 1 / -1;
     width: 300px;
     height: 400px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
@@ -51,23 +65,48 @@
 }
 
 .user-photo__range-wrapper {
+  margin-bottom: 78px;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 0;
   }
 }
 
 .user-photo__switches {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: 57px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 38px;
+    margin-right: 28px;
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -1px;
+    margin-top: -2px;
+    margin-right: 45px;
   }
 }
 
 .user-photo__range-group {
   @media (min-width: $tablet-width) {
     display: grid;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    grid-template-rows: 73px 70px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    margin-bottom: 110px;
   }
 }
 
@@ -84,6 +123,43 @@
   display: block;
 }
 
+
+.user-photo__range-item:nth-of-type(1) .filter-range__toggle {
+  @media (min-width: $tablet-width) {
+    left: 80%;
+  }
+}
+
+.user-photo__range-item:nth-of-type(2) .filter-range__toggle {
+  @media (min-width: $tablet-width) {
+    left: 13%;
+  }
+}
+
+.user-photo__range-item:nth-of-type(3) .filter-range__toggle {
+  @media (min-width: $tablet-width) {
+    left: 48%;
+  }
+}
+
 .user-photo__edit-buttons {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-left: 23px;
+    margin-left: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
