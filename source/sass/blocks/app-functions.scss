@@ -49,22 +49,30 @@
 .app-functions__list-wrapper {
   margin-top: 0;
   margin-bottom: 0;
-  background-image: url("../img/phone-with-smile.png");
+  background-image: url("../img/phone-with-smile-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% calc(100% + 43px);
   padding-top: 16px;
   padding-bottom: 283px;
   background-color: $gray-300;
 
+  @media (max-width: $mobile-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/phone-with-smile-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
-    background-image: url("../img/phone-with-smile-tablet.png");
+    background-image: url("../img/phone-with-smile-tablet@1x.png");
     background-position: 0 0;
     padding-left: 310px;
     padding-top: 71px;
     padding-bottom: 41px;
     background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/phone-with-smile-tablet@2x.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -73,9 +81,13 @@
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 32px;
-    background-image: url("../img/phone-with-smile-desktop.png");
+    background-image: url("../img/phone-with-smile-desktop@1x.png");
     background-size: 100%;
     background-position: 50% 0;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../img/phone-with-smile-desktop@2x.png");
   }
 }
 
