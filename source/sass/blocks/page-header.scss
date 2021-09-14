@@ -230,6 +230,7 @@
 
   @media (max-width: $mobile-width) and (min-resolution: 2dppx) {
     background-image: url("../img/hand-with-phone-mobile@2x.png");
+    background-size: 320px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -243,6 +244,7 @@
 
   @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
     background-image: url("../img/hand-with-phone-tablet@2x.png");
+    background-size: 660px auto;
   }
 
 
@@ -254,6 +256,7 @@
 
   @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
     background-image: url("../img/hand-with-phone-desktop@2x.png");
+    background-size: 1050px auto;
   }
 }
 
