@@ -27,13 +27,11 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
-
-exports.server = server;
 
 // HTML
 
@@ -158,7 +156,6 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     sprite,
     createWebp
   ),
@@ -176,7 +173,6 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
-    scripts,
     sprite,
     createWebp
   ),
