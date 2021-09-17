@@ -237,7 +237,7 @@
   }
 }
 
-.photo a {
+.photo__link-likes {
   position: relative;
   font-size: 12px;
   line-height: 24px;
@@ -273,7 +273,7 @@
   }
 }
 
-.photo__article--hot a {
+.photo__article--hot .photo__link-likes {
   @media (min-width: $tablet-width) {
     order: 3;
     margin-right: 29px;

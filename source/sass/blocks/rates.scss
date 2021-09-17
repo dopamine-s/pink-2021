@@ -3,6 +3,7 @@
   padding-top: 81px;
   padding-bottom: 24px;
   position: relative;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     min-height: 344px;
@@ -31,7 +32,6 @@
 
 .rates__list {
   @include container;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   padding-bottom: 27px;
