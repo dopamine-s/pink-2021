@@ -35,7 +35,7 @@
   }
 }
 
-.user-photo__range-item:last-of-type .filter-range {
+.filter-range--last {
   @media (min-width: $desktop-width) {
     &::after {
       display: none;

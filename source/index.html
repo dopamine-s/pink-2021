@@ -9,14 +9,14 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="../img/favicons/icon-152.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
+    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
     <header class="page__header page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__top-bar">
+        <div class="page-header__top-bar page-header__top-bar--nojs"> <!--для изменения состояния меню (и всех его элементов) на "Открытое", "Закрытое", и "Без использования JS", используются следующие классы соответственно: page-header__top-bar--opened, page-header__top-bar--closed, page-header__top-bar--nojs / По умолчанию стоит page-header__top-bar--nojs, так как скрипт JS не реализован -->
           <div class="page-header__inner-wrapper">
             <a class="page-header__logo logo" href="index.html">
               <svg class="logo__header-logo logo__header-logo--mobile" width="74" height="23" viewBox="0 0 74 23" fill="none">
@@ -164,10 +164,10 @@
             Исследование ученых об использовании приложения
           </h2>
           <p class="article__subject">
-            Эффект<span class="article__spacer--subject"></span> на 24 часа!
+            Эффект<span class="article__spacer article__spacer--subject"></span> на 24 часа!
           </p>
           <p class="article__text">
-            Британские ученые провели исследования и доказали,<span class="article__spacer--text"></span> что положительный эффект<span class="article__spacer"></span> от использования приложения длится целые сутки!
+            Британские ученые провели исследования и доказали,<span class="article__spacer article__spacer--text"></span> что положительный эффект<span class="article__spacer"></span> от использования приложения длится целые сутки!
           </p>
           <a class="article__link" href="#">
             Узнать больше об исследовании
@@ -433,6 +433,9 @@
           </p>
         </div>
         <div class="contacts__map">
+          <iframe class="contacts__map-interactive-mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631845866224!5m2!1sru!2sru" width="100%" height="200" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="contacts__map-interactive-tablet" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631847401810!5m2!1sru!2sru" width="100%" height="374" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="contacts__map-interactive-desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631847401810!5m2!1sru!2sru" width="100%" height="502" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
@@ -498,7 +501,7 @@
             Разработано
           </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="academy-social-logo" src="../img/html-academy-social-logo.svg" width="27" height="34" alt="логотип «html academy»">
+            <img class="academy-social-logo" src="img/html-academy-social-logo.svg" width="27" height="34" alt="логотип «html academy»">
           </a>
         </div>
       </div>

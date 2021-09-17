@@ -74,11 +74,13 @@
 .article__spacer {
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding-right: 10px;
-  }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     &--subject {
       padding-right: 150px;
+    }
+
+    &--text {
+      padding-right: 0;
     }
   }
 

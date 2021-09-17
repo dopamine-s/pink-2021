@@ -30,6 +30,7 @@
 }
 
 .rates__list {
+  @include container;
   overflow: hidden;
   display: flex;
   justify-content: center;

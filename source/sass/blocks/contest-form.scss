@@ -70,6 +70,7 @@
 
 .contest-form__legend--textarea {
   margin-bottom: 6px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: flex;
