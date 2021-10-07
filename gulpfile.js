@@ -57,7 +57,7 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(squoosh())
+    // .pipe(squoosh())
     .pipe(gulp.dest("build/img"))
 }
 
