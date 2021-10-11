@@ -26,8 +26,10 @@
   }
 }
 
-.page-header__logo,
-.page-footer__logo {
+.page-header__logo {
+  margin-top: 23px;
+  margin-left: 20px;
+
   &:active path {
     opacity: 0.3;
   }
@@ -35,11 +37,6 @@
   &:hover:not(:active) path {
     fill: $pink;
   }
-}
-
-.page-header__logo {
-  margin-top: 23px;
-  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-top: 27px;

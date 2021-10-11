@@ -20,6 +20,14 @@
   margin: 0;
 }
 
-.copyright__link img {
+.copyright__logo {
   padding-top: 10px;
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:hover:not(:active) path {
+    fill: $gray-500;
+  }
 }

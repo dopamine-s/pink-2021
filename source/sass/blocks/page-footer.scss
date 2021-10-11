@@ -16,6 +16,14 @@
 
 .page-footer__logo {
   margin-bottom: 15px;
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:hover:not(:active) path {
+    fill: $gray-500;
+  }
 }
 
 .page-footer__social {
