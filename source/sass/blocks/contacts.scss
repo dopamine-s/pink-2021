@@ -209,6 +209,16 @@
   }
 }
 
+.contacts__link--mail {
+  &:hover {
+    color: $gray-500;
+  }
+
+  &:active {
+    color: $gray-500-transparent-3;
+  }
+}
+
 .contacts__text:last-of-type .contacts__link {
   @media (max-width: $mobile-width) {
     padding-left: 2px;

@@ -14,9 +14,30 @@
 .button--pink {
   color: $pink;
   border-color: $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: $white-transparent-30;
+    background-color: $pink;
+  }
 }
 
 .button--transparent {
   color: $gray-500-transparent-1;
   border-color: $gray-500-transparent-1;
+
+  &:hover {
+    color: $gray-500-transparent-3;
+    border-color: $gray-500-transparent-3;
+  }
+
+  &:active {
+    color: $white-transparent-30;
+    background-color: $gray-500-transparent-3;
+    border-color: transparent;
+  }
 }

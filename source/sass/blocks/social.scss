@@ -17,8 +17,8 @@
   border: 3px solid $gray-500-transparent-1;
   border-radius: 50%;
   margin-right: 9px;
-  padding-top: 10px;
-  padding-left: 15px;
+  padding-top: 11px;
+  padding-left: 1px;
 
   @media (min-width: $desktop-width) {
     margin-right: 6px;
@@ -26,11 +26,15 @@
 }
 
 .social__item:nth-of-type(2) {
-  padding-left: 20px;
-  padding-top: 12px;
+  padding-top: 13px;
+  padding-left: 6px;
 }
 
 .social__item:nth-of-type(3) {
-  padding-left: 19px;
-  padding-top: 10px;
+  padding-top: 11px;
+  padding-left: 4px;
+}
+
+.social__link {
+  padding: 14px;
 }
