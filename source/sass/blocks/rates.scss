@@ -71,7 +71,7 @@
     position: absolute;
     text-align: center;
     padding-bottom: 4px;
-    width: 100px;
+    width: 99px;
     height: 0;
     border-bottom: 23px solid $pink;
     border-left: 23px solid transparent;
@@ -87,7 +87,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      width: 90px;
+      width: 86px;
       padding-bottom: 5px;
       padding-right: 5px;
       top: 10px;
@@ -100,11 +100,11 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      width: 110px;
+      width: 102px;
       padding-bottom: 4px;
       padding-right: 5px;
       top: 13px;
-      left: -26px;
+      left: -25px;
       border-bottom: 23px solid $pink;
       border-left: 23px solid transparent;
       border-right: 23px solid transparent;
